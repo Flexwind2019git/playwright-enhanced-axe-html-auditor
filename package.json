@@ -1,0 +1,34 @@
+{
+  "name": "@contanerized/playwright-axe-reporting",
+  "version": "0.1.0",
+  "description": "checks 103 axe rules against any number of urls",
+  "engines": {
+    "node": ">=10.0.0"
+  },
+  "author": {
+    "name": "Anthony Delorie",
+    "url": "https://github.com/jsdev"
+  },
+  "keywords": [
+    "accessibility",
+    "website",
+    "scan",
+    "audit"
+  ],
+  "homepage": "https://github.com/jsdev/playwright-axe-audit",
+  "bugs": {
+    "url": "https://github.com/jsdev/playwright-axe-audit/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jsdev/playwright-axe-audit.git"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "@axe-core/playwright": "^4.9.1",
+    "cheerio": "^1.0.0-rc.10",
+    "contrast-compass-axe-html-reporter": "^1.0.0-beta.5",
+    "jsdom": "^24.1.0",
+    "playwright": "^1.45.1"
+  }
+}

@@ -1,0 +1,2811 @@
+<!DOCTYPE html><html lang="en"><head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <style>
+        .violationCard {
+            width: 100%;
+            margin-bottom: 1rem;
+        }
+
+        .violationCardLine {
+            display: flex;
+            justify-content: space-between;
+            align-items: start;
+        }
+
+        .learnMore {
+            margin-bottom: 0.75rem;
+            white-space: nowrap;
+            color: #2557a7;
+        }
+
+        .card-link {
+            color: #2557a7;
+        }
+
+        .violationNode {
+            font-size: 0.75rem;
+        }
+
+        .wrapBreakWord {
+            word-break: break-word;
+        }
+
+        .summary {
+            font-size: 1rem;
+        }
+
+        .summarySection {
+            margin: 0.5rem 0;
+        }
+
+        .hljs {
+            white-space: pre-wrap;
+            width: 100%;
+            background: #f0f0f0;
+        }
+
+        p {
+            margin-top: 0.3rem;
+        }
+
+        li {
+            line-height: 1.618;
+        }
+    </style>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/stackoverflow-light.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+    <link rel="icon" href="https://www.deque.com/wp-content/uploads/2018/03/cropped-DQ_SecondaryLogo_HeroBlue_RGB-1-32x32.png" sizes="32x32">
+    <title>AXE Accessibility Results</title>
+</head>
+
+<body>
+    <div style="padding: 2rem">
+        <h1>
+            Axe-core a11y results for www.flexwind.com/blog project
+        </h1>
+        <div class="summarySection">
+            <h2 class="summary">
+                Page URL:
+                <a href="https://www.flexwind.com/blog/" target="_blank" class="card-link">https://www.flexwind.com/blog/</a>
+                <br>
+            </h2>
+        </div>
+        <table class="table table-striped table-bordered">
+            <caption>axe-core found <span class="badge badge-warning">67</span> violations</caption>
+            <thead>
+                <tr>
+                    <th style="width: 5%">#</th>
+                    <th style="width: 45%">Description</th>
+                    <th style="width: 15%">Axe rule ID</th>
+                    <th style="width: 23%">WCAG</th>
+                    <th style="width: 7%">Impact</th>
+                    <th style="width: 5%">Count</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row"><a href="#1" class="card-link">1</a></th>
+                    <td>Elements must meet enhanced color contrast ratio thresholds</td>
+                    <td>color-contrast-enhanced</td>
+                    <td>WCAG 2 Level AAA, WCAG 1.4.6</td>
+                    <td>serious</td>
+                    <td>36</td>
+                </tr>
+                <tr>
+                    <th scope="row"><a href="#2" class="card-link">2</a></th>
+                    <td>Elements must meet minimum color contrast ratio thresholds</td>
+                    <td>color-contrast</td>
+                    <td>WCAG 2 Level AA, WCAG 1.4.3</td>
+                    <td>serious</td>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <th scope="row"><a href="#3" class="card-link">3</a></th>
+                    <td>Heading levels should only increase by one</td>
+                    <td>heading-order</td>
+                    <td>Best practice</td>
+                    <td>moderate</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <th scope="row"><a href="#4" class="card-link">4</a></th>
+                    <td>Aside should not be contained in another landmark</td>
+                    <td>landmark-complementary-is-top-level</td>
+                    <td>Best practice</td>
+                    <td>moderate</td>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <th scope="row"><a href="#5" class="card-link">5</a></th>
+                    <td>Ensures landmarks are unique</td>
+                    <td>landmark-unique</td>
+                    <td>Best practice</td>
+                    <td>moderate</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <th scope="row"><a href="#6" class="card-link">6</a></th>
+                    <td>Links must have discernible text</td>
+                    <td>link-name</td>
+                    <td>WCAG 2 Level A, WCAG 2.4.4, WCAG 4.1.2</td>
+                    <td>serious</td>
+                    <td>3</td>
+                </tr>
+            </tbody>
+        </table>
+        <h3>Failed</h3>
+        <div class="card violationCard">
+            <div class="card-body">
+                <div class="violationCardLine">
+                    <h5 class="card-title violationCardTitleItem">
+                        <a id="1">1.</a> Elements must meet enhanced color contrast ratio thresholds
+                    </h5>
+                    <a href="https://dequeuniversity.com/rules/axe/4.9/color-contrast-enhanced?application=playwright" target="_blank" class="card-link violationCardTitleItem learnMore">Learn
+                        more</a>
+                </div>
+                <div class="violationCardLine">
+                    <h6 class="card-subtitle mb-2 text-muted">color-contrast-enhanced</h6>
+                    <h6 class="card-subtitle mb-2 text-muted violationCardTitleItem">
+                        WCAG 2 Level AAA, WCAG 1.4.6
+                    </h6>
+                </div>
+                <div class="violationCardLine">
+                    <p class="card-text">Ensures the contrast between foreground and background colors meets WCAG 2 AAA enhanced contrast ratio thresholds</p>
+                    <h6 class="card-subtitle mb-2 text-muted violationCardTitleItem">
+                        serious
+                    </h6>
+                </div>
+                <div class="violationCardLine">
+                    <h6 class="card-subtitle mb-2 text-muted violationCardTitleItem">
+                        Issue Tags: 
+                        <span class="badge bg-light text-dark"> cat.color </span>
+
+                        <span class="badge bg-light text-dark"> wcag2aaa </span>
+
+                        <span class="badge bg-light text-dark"> wcag146 </span>
+
+                        <span class="badge bg-light text-dark"> ACT </span>
+                    </h6>
+                </div>
+                <div class="violationNode">
+                    <table class="table table-sm table-bordered" id="color-contrast-enhanced-violations-table">
+                        <thead>
+                            <tr>
+                                <th style="width: 2%">#</th>
+                                <th style="width: 49%">Issue Description</th>
+                                <th style="width: 49%">
+                                    To solve this violation, you need to...
+                                </th>
+                            <th>Fix Now</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>
+                                    <p><strong>Element location</strong></p>
+                                    <pre><code class="css text-wrap">time[datetime="2022-10-10T21:37:13+00:00"]</code></pre>
+                                    <p><strong>Element source</strong></p>
+                                    <pre><code class="html text-wrap">&lt;time class="entry-date" datetime="2022-10-10T21:37:13+00:00"&gt;October 10, 2022&lt;/time&gt;</code></pre>
+                                </td>
+                                <td>
+                                    <div class="wrapBreakWord">
+                                        <p>Fix any of the following:</p>
+                                        <ul class="text-muted">
+                                            <li>  Element has insufficient color contrast of 6.32 (foreground color: #5e5e5e, background color: #fcfcfc, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 7:1</li>
+                                        </ul>
+                                    </div>
+                                    <p><strong>Related node:</strong></p>
+                                    <pre><code class="css text-wrap">#main</code></pre>
+                                </td>
+                            
+          <td>
+            <a href="https://contrast-compass.vercel.app?fg=%235e5e5e&amp;bg=%23fcfcfc&amp;threshold=7:1&amp;url=https%3A%2F%2Fwww.flexwind.com%2Fblog&amp;selector=time%5Bdatetime%3D%222022-10-10T21%3A37%3A13%2B00%3A00%22%5D" title="fix now" target="contrast-compass"><img src="https://contrast-compass.vercel.app/assets/compass-companion-120x100.webp" height="50" width="60"></a>
+          </td>
+        </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>
+                                    <p><strong>Element location</strong></p>
+                                    <pre><code class="css text-wrap">time[datetime="2020-09-07T14:46:24+00:00"]</code></pre>
+                                    <p><strong>Element source</strong></p>
+                                    <pre><code class="html text-wrap">&lt;time class="entry-date" datetime="2020-09-07T14:46:24+00:00"&gt;September 7, 2020&lt;/time&gt;</code></pre>
+                                </td>
+                                <td>
+                                    <div class="wrapBreakWord">
+                                        <p>Fix any of the following:</p>
+                                        <ul class="text-muted">
+                                            <li>  Element has insufficient color contrast of 6.32 (foreground color: #5e5e5e, background color: #fcfcfc, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 7:1</li>
+                                        </ul>
+                                    </div>
+                                    <p><strong>Related node:</strong></p>
+                                    <pre><code class="css text-wrap">#main</code></pre>
+                                </td>
+                            
+          <td>
+            <a href="https://contrast-compass.vercel.app?fg=%235e5e5e&amp;bg=%23fcfcfc&amp;threshold=7:1&amp;url=https%3A%2F%2Fwww.flexwind.com%2Fblog&amp;selector=time%5Bdatetime%3D%222020-09-07T14%3A46%3A24%2B00%3A00%22%5D" title="fix now" target="contrast-compass"><img src="https://contrast-compass.vercel.app/assets/compass-companion-120x100.webp" height="50" width="60"></a>
+          </td>
+        </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>
+                                    <p><strong>Element location</strong></p>
+                                    <pre><code class="css text-wrap">time[datetime="2020-08-30T17:32:26+00:00"]</code></pre>
+                                    <p><strong>Element source</strong></p>
+                                    <pre><code class="html text-wrap">&lt;time class="entry-date" datetime="2020-08-30T17:32:26+00:00"&gt;August 30, 2020&lt;/time&gt;</code></pre>
+                                </td>
+                                <td>
+                                    <div class="wrapBreakWord">
+                                        <p>Fix any of the following:</p>
+                                        <ul class="text-muted">
+                                            <li>  Element has insufficient color contrast of 6.32 (foreground color: #5e5e5e, background color: #fcfcfc, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 7:1</li>
+                                        </ul>
+                                    </div>
+                                    <p><strong>Related node:</strong></p>
+                                    <pre><code class="css text-wrap">#main</code></pre>
+                                </td>
+                            
+          <td>
+            <a href="https://contrast-compass.vercel.app?fg=%235e5e5e&amp;bg=%23fcfcfc&amp;threshold=7:1&amp;url=https%3A%2F%2Fwww.flexwind.com%2Fblog&amp;selector=time%5Bdatetime%3D%222020-08-30T17%3A32%3A26%2B00%3A00%22%5D" title="fix now" target="contrast-compass"><img src="https://contrast-compass.vercel.app/assets/compass-companion-120x100.webp" height="50" width="60"></a>
+          </td>
+        </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>
+                                    <p><strong>Element location</strong></p>
+                                    <pre><code class="css text-wrap">time[datetime="2020-08-23T14:40:52+00:00"]</code></pre>
+                                    <p><strong>Element source</strong></p>
+                                    <pre><code class="html text-wrap">&lt;time class="entry-date" datetime="2020-08-23T14:40:52+00:00"&gt;August 23, 2020&lt;/time&gt;</code></pre>
+                                </td>
+                                <td>
+                                    <div class="wrapBreakWord">
+                                        <p>Fix any of the following:</p>
+                                        <ul class="text-muted">
+                                            <li>  Element has insufficient color contrast of 6.32 (foreground color: #5e5e5e, background color: #fcfcfc, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 7:1</li>
+                                        </ul>
+                                    </div>
+                                    <p><strong>Related node:</strong></p>
+                                    <pre><code class="css text-wrap">#main</code></pre>
+                                </td>
+                            
+          <td>
+            <a href="https://contrast-compass.vercel.app?fg=%235e5e5e&amp;bg=%23fcfcfc&amp;threshold=7:1&amp;url=https%3A%2F%2Fwww.flexwind.com%2Fblog&amp;selector=time%5Bdatetime%3D%222020-08-23T14%3A40%3A52%2B00%3A00%22%5D" title="fix now" target="contrast-compass"><img src="https://contrast-compass.vercel.app/assets/compass-companion-120x100.webp" height="50" width="60"></a>
+          </td>
+        </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>
+                                    <p><strong>Element location</strong></p>
+                                    <pre><code class="css text-wrap">time[datetime="2020-08-17T12:36:24+00:00"]</code></pre>
+                                    <p><strong>Element source</strong></p>
+                                    <pre><code class="html text-wrap">&lt;time class="entry-date" datetime="2020-08-17T12:36:24+00:00"&gt;August 17, 2020&lt;/time&gt;</code></pre>
+                                </td>
+                                <td>
+                                    <div class="wrapBreakWord">
+                                        <p>Fix any of the following:</p>
+                                        <ul class="text-muted">
+                                            <li>  Element has insufficient color contrast of 6.32 (foreground color: #5e5e5e, background color: #fcfcfc, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 7:1</li>
+                                        </ul>
+                                    </div>
+                                    <p><strong>Related node:</strong></p>
+                                    <pre><code class="css text-wrap">#main</code></pre>
+                                </td>
+                            
+          <td>
+            <a href="https://contrast-compass.vercel.app?fg=%235e5e5e&amp;bg=%23fcfcfc&amp;threshold=7:1&amp;url=https%3A%2F%2Fwww.flexwind.com%2Fblog&amp;selector=time%5Bdatetime%3D%222020-08-17T12%3A36%3A24%2B00%3A00%22%5D" title="fix now" target="contrast-compass"><img src="https://contrast-compass.vercel.app/assets/compass-companion-120x100.webp" height="50" width="60"></a>
+          </td>
+        </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>
+                                    <p><strong>Element location</strong></p>
+                                    <pre><code class="css text-wrap">time[datetime="2020-08-09T18:08:56+00:00"]</code></pre>
+                                    <p><strong>Element source</strong></p>
+                                    <pre><code class="html text-wrap">&lt;time class="entry-date" datetime="2020-08-09T18:08:56+00:00"&gt;August 9, 2020&lt;/time&gt;</code></pre>
+                                </td>
+                                <td>
+                                    <div class="wrapBreakWord">
+                                        <p>Fix any of the following:</p>
+                                        <ul class="text-muted">
+                                            <li>  Element has insufficient color contrast of 6.32 (foreground color: #5e5e5e, background color: #fcfcfc, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 7:1</li>
+                                        </ul>
+                                    </div>
+                                    <p><strong>Related node:</strong></p>
+                                    <pre><code class="css text-wrap">#main</code></pre>
+                                </td>
+                            
+          <td>
+            <a href="https://contrast-compass.vercel.app?fg=%235e5e5e&amp;bg=%23fcfcfc&amp;threshold=7:1&amp;url=https%3A%2F%2Fwww.flexwind.com%2Fblog&amp;selector=time%5Bdatetime%3D%222020-08-09T18%3A08%3A56%2B00%3A00%22%5D" title="fix now" target="contrast-compass"><img src="https://contrast-compass.vercel.app/assets/compass-companion-120x100.webp" height="50" width="60"></a>
+          </td>
+        </tr>
+                            <tr>
+                                <td>7</td>
+                                <td>
+                                    <p><strong>Element location</strong></p>
+                                    <pre><code class="css text-wrap">time[datetime="2020-08-03T17:20:09+00:00"]</code></pre>
+                                    <p><strong>Element source</strong></p>
+                                    <pre><code class="html text-wrap">&lt;time class="entry-date" datetime="2020-08-03T17:20:09+00:00"&gt;August 3, 2020&lt;/time&gt;</code></pre>
+                                </td>
+                                <td>
+                                    <div class="wrapBreakWord">
+                                        <p>Fix any of the following:</p>
+                                        <ul class="text-muted">
+                                            <li>  Element has insufficient color contrast of 6.32 (foreground color: #5e5e5e, background color: #fcfcfc, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 7:1</li>
+                                        </ul>
+                                    </div>
+                                    <p><strong>Related node:</strong></p>
+                                    <pre><code class="css text-wrap">#main</code></pre>
+                                </td>
+                            
+          <td>
+            <a href="https://contrast-compass.vercel.app?fg=%235e5e5e&amp;bg=%23fcfcfc&amp;threshold=7:1&amp;url=https%3A%2F%2Fwww.flexwind.com%2Fblog&amp;selector=time%5Bdatetime%3D%222020-08-03T17%3A20%3A09%2B00%3A00%22%5D" title="fix now" target="contrast-compass"><img src="https://contrast-compass.vercel.app/assets/compass-companion-120x100.webp" height="50" width="60"></a>
+          </td>
+        </tr>
+                            <tr>
+                                <td>8</td>
+                                <td>
+                                    <p><strong>Element location</strong></p>
+                                    <pre><code class="css text-wrap">time[datetime="2020-07-31T19:09:35+00:00"]</code></pre>
+                                    <p><strong>Element source</strong></p>
+                                    <pre><code class="html text-wrap">&lt;time class="entry-date" datetime="2020-07-31T19:09:35+00:00"&gt;July 31, 2020&lt;/time&gt;</code></pre>
+                                </td>
+                                <td>
+                                    <div class="wrapBreakWord">
+                                        <p>Fix any of the following:</p>
+                                        <ul class="text-muted">
+                                            <li>  Element has insufficient color contrast of 6.32 (foreground color: #5e5e5e, background color: #fcfcfc, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 7:1</li>
+                                        </ul>
+                                    </div>
+                                    <p><strong>Related node:</strong></p>
+                                    <pre><code class="css text-wrap">#main</code></pre>
+                                </td>
+                            
+          <td>
+            <a href="https://contrast-compass.vercel.app?fg=%235e5e5e&amp;bg=%23fcfcfc&amp;threshold=7:1&amp;url=https%3A%2F%2Fwww.flexwind.com%2Fblog&amp;selector=time%5Bdatetime%3D%222020-07-31T19%3A09%3A35%2B00%3A00%22%5D" title="fix now" target="contrast-compass"><img src="https://contrast-compass.vercel.app/assets/compass-companion-120x100.webp" height="50" width="60"></a>
+          </td>
+        </tr>
+                            <tr>
+                                <td>9</td>
+                                <td>
+                                    <p><strong>Element location</strong></p>
+                                    <pre><code class="css text-wrap">time[datetime="2020-01-21T17:42:42+00:00"]</code></pre>
+                                    <p><strong>Element source</strong></p>
+                                    <pre><code class="html text-wrap">&lt;time class="entry-date" datetime="2020-01-21T17:42:42+00:00"&gt;January 21, 2020&lt;/time&gt;</code></pre>
+                                </td>
+                                <td>
+                                    <div class="wrapBreakWord">
+                                        <p>Fix any of the following:</p>
+                                        <ul class="text-muted">
+                                            <li>  Element has insufficient color contrast of 6.32 (foreground color: #5e5e5e, background color: #fcfcfc, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 7:1</li>
+                                        </ul>
+                                    </div>
+                                    <p><strong>Related node:</strong></p>
+                                    <pre><code class="css text-wrap">#main</code></pre>
+                                </td>
+                            
+          <td>
+            <a href="https://contrast-compass.vercel.app?fg=%235e5e5e&amp;bg=%23fcfcfc&amp;threshold=7:1&amp;url=https%3A%2F%2Fwww.flexwind.com%2Fblog&amp;selector=time%5Bdatetime%3D%222020-01-21T17%3A42%3A42%2B00%3A00%22%5D" title="fix now" target="contrast-compass"><img src="https://contrast-compass.vercel.app/assets/compass-companion-120x100.webp" height="50" width="60"></a>
+          </td>
+        </tr>
+                            <tr>
+                                <td>10</td>
+                                <td>
+                                    <p><strong>Element location</strong></p>
+                                    <pre><code class="css text-wrap">time[datetime="2019-06-10T15:11:37+00:00"]</code></pre>
+                                    <p><strong>Element source</strong></p>
+                                    <pre><code class="html text-wrap">&lt;time class="entry-date" datetime="2019-06-10T15:11:37+00:00"&gt;June 10, 2019&lt;/time&gt;</code></pre>
+                                </td>
+                                <td>
+                                    <div class="wrapBreakWord">
+                                        <p>Fix any of the following:</p>
+                                        <ul class="text-muted">
+                                            <li>  Element has insufficient color contrast of 6.32 (foreground color: #5e5e5e, background color: #fcfcfc, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 7:1</li>
+                                        </ul>
+                                    </div>
+                                    <p><strong>Related node:</strong></p>
+                                    <pre><code class="css text-wrap">#main</code></pre>
+                                </td>
+                            
+          <td>
+            <a href="https://contrast-compass.vercel.app?fg=%235e5e5e&amp;bg=%23fcfcfc&amp;threshold=7:1&amp;url=https%3A%2F%2Fwww.flexwind.com%2Fblog&amp;selector=time%5Bdatetime%3D%222019-06-10T15%3A11%3A37%2B00%3A00%22%5D" title="fix now" target="contrast-compass"><img src="https://contrast-compass.vercel.app/assets/compass-companion-120x100.webp" height="50" width="60"></a>
+          </td>
+        </tr>
+                            <tr>
+                                <td>11</td>
+                                <td>
+                                    <p><strong>Element location</strong></p>
+                                    <pre><code class="css text-wrap">#recent-posts-2 &gt; ul &gt; li:nth-child(1) &gt; a</code></pre>
+                                    <p><strong>Element source</strong></p>
+                                    <pre><code class="html text-wrap">&lt;a href="https://www.flexwind.com/user-experience/strengthen-your-ux-soft-skills/"&gt;Strengthen your UX soft skills&lt;/a&gt;</code></pre>
+                                </td>
+                                <td>
+                                    <div class="wrapBreakWord">
+                                        <p>Fix any of the following:</p>
+                                        <ul class="text-muted">
+                                            <li>  Element has insufficient color contrast of 4.73 (foreground color: #ca4042, background color: #fcfcfc, font size: 9.8pt (13px), font weight: normal). Expected contrast ratio of 7:1</li>
+                                        </ul>
+                                    </div>
+                                    <p><strong>Related node:</strong></p>
+                                    <pre><code class="css text-wrap">#main</code></pre>
+                                </td>
+                            
+          <td>
+            <a href="https://contrast-compass.vercel.app?fg=%23ca4042&amp;bg=%23fcfcfc&amp;threshold=7:1&amp;url=https%3A%2F%2Fwww.flexwind.com%2Fblog&amp;selector=%23recent-posts-2%20%3E%20ul%20%3E%20li%3Anth-child(1)%20%3E%20a" title="fix now" target="contrast-compass"><img src="https://contrast-compass.vercel.app/assets/compass-companion-120x100.webp" height="50" width="60"></a>
+          </td>
+        </tr>
+                            <tr>
+                                <td>12</td>
+                                <td>
+                                    <p><strong>Element location</strong></p>
+                                    <pre><code class="css text-wrap">#recent-posts-2 &gt; ul &gt; li:nth-child(2) &gt; a</code></pre>
+                                    <p><strong>Element source</strong></p>
+                                    <pre><code class="html text-wrap">&lt;a href="https://www.flexwind.com/user-experience/build-trust-through-better-ux-design/"&gt;Build Trust Through Better UX Design&lt;/a&gt;</code></pre>
+                                </td>
+                                <td>
+                                    <div class="wrapBreakWord">
+                                        <p>Fix any of the following:</p>
+                                        <ul class="text-muted">
+                                            <li>  Element has insufficient color contrast of 4.73 (foreground color: #ca4042, background color: #fcfcfc, font size: 9.8pt (13px), font weight: normal). Expected contrast ratio of 7:1</li>
+                                        </ul>
+                                    </div>
+                                    <p><strong>Related node:</strong></p>
+                                    <pre><code class="css text-wrap">#main</code></pre>
+                                </td>
+                            
+          <td>
+            <a href="https://contrast-compass.vercel.app?fg=%23ca4042&amp;bg=%23fcfcfc&amp;threshold=7:1&amp;url=https%3A%2F%2Fwww.flexwind.com%2Fblog&amp;selector=%23recent-posts-2%20%3E%20ul%20%3E%20li%3Anth-child(2)%20%3E%20a" title="fix now" target="contrast-compass"><img src="https://contrast-compass.vercel.app/assets/compass-companion-120x100.webp" height="50" width="60"></a>
+          </td>
+        </tr>
+                            <tr>
+                                <td>13</td>
+                                <td>
+                                    <p><strong>Element location</strong></p>
+                                    <pre><code class="css text-wrap">#recent-posts-2 &gt; ul &gt; li:nth-child(3) &gt; a</code></pre>
+                                    <p><strong>Element source</strong></p>
+                                    <pre><code class="html text-wrap">&lt;a href="https://www.flexwind.com/user-experience/usability-expert-review-to-improve-grants-management-app-a-ux-case-study/"&gt;Usability Expert Review to Improve Grants Management App – a UX case study&lt;/a&gt;</code></pre>
+                                </td>
+                                <td>
+                                    <div class="wrapBreakWord">
+                                        <p>Fix any of the following:</p>
+                                        <ul class="text-muted">
+                                            <li>  Element has insufficient color contrast of 4.73 (foreground color: #ca4042, background color: #fcfcfc, font size: 9.8pt (13px), font weight: normal). Expected contrast ratio of 7:1</li>
+                                        </ul>
+                                    </div>
+                                    <p><strong>Related node:</strong></p>
+                                    <pre><code class="css text-wrap">#main</code></pre>
+                                </td>
+                            
+          <td>
+            <a href="https://contrast-compass.vercel.app?fg=%23ca4042&amp;bg=%23fcfcfc&amp;threshold=7:1&amp;url=https%3A%2F%2Fwww.flexwind.com%2Fblog&amp;selector=%23recent-posts-2%20%3E%20ul%20%3E%20li%3Anth-child(3)%20%3E%20a" title="fix now" target="contrast-compass"><img src="https://contrast-compass.vercel.app/assets/compass-companion-120x100.webp" height="50" width="60"></a>
+          </td>
+        </tr>
+                            <tr>
+                                <td>14</td>
+                                <td>
+                                    <p><strong>Element location</strong></p>
+                                    <pre><code class="css text-wrap">#recent-posts-2 &gt; ul &gt; li:nth-child(4) &gt; a</code></pre>
+                                    <p><strong>Element source</strong></p>
+                                    <pre><code class="html text-wrap">&lt;a href="https://www.flexwind.com/software-development/automated-data-profiling-ingest-the-right-data-with-confidence/"&gt;Automated Data Profiling: Ingest the Right Data with Confidence&lt;/a&gt;</code></pre>
+                                </td>
+                                <td>
+                                    <div class="wrapBreakWord">
+                                        <p>Fix any of the following:</p>
+                                        <ul class="text-muted">
+                                            <li>  Element has insufficient color contrast of 4.73 (foreground color: #ca4042, background color: #fcfcfc, font size: 9.8pt (13px), font weight: normal). Expected contrast ratio of 7:1</li>
+                                        </ul>
+                                    </div>
+                                    <p><strong>Related node:</strong></p>
+                                    <pre><code class="css text-wrap">#main</code></pre>
+                                </td>
+                            
+          <td>
+            <a href="https://contrast-compass.vercel.app?fg=%23ca4042&amp;bg=%23fcfcfc&amp;threshold=7:1&amp;url=https%3A%2F%2Fwww.flexwind.com%2Fblog&amp;selector=%23recent-posts-2%20%3E%20ul%20%3E%20li%3Anth-child(4)%20%3E%20a" title="fix now" target="contrast-compass"><img src="https://contrast-compass.vercel.app/assets/compass-companion-120x100.webp" height="50" width="60"></a>
+          </td>
+        </tr>
+                            <tr>
+                                <td>15</td>
+                                <td>
+                                    <p><strong>Element location</strong></p>
+                                    <pre><code class="css text-wrap">#recent-posts-2 &gt; ul &gt; li:nth-child(5) &gt; a</code></pre>
+                                    <p><strong>Element source</strong></p>
+                                    <pre><code class="html text-wrap">&lt;a href="https://www.flexwind.com/user-experience/usability-heuristics-in-action-examples-from-everyday-life/"&gt;Usability Heuristics In Action: Examples from Everyday Life&lt;/a&gt;</code></pre>
+                                </td>
+                                <td>
+                                    <div class="wrapBreakWord">
+                                        <p>Fix any of the following:</p>
+                                        <ul class="text-muted">
+                                            <li>  Element has insufficient color contrast of 4.73 (foreground color: #ca4042, background color: #fcfcfc, font size: 9.8pt (13px), font weight: normal). Expected contrast ratio of 7:1</li>
+                                        </ul>
+                                    </div>
+                                    <p><strong>Related node:</strong></p>
+                                    <pre><code class="css text-wrap">#main</code></pre>
+                                </td>
+                            
+          <td>
+            <a href="https://contrast-compass.vercel.app?fg=%23ca4042&amp;bg=%23fcfcfc&amp;threshold=7:1&amp;url=https%3A%2F%2Fwww.flexwind.com%2Fblog&amp;selector=%23recent-posts-2%20%3E%20ul%20%3E%20li%3Anth-child(5)%20%3E%20a" title="fix now" target="contrast-compass"><img src="https://contrast-compass.vercel.app/assets/compass-companion-120x100.webp" height="50" width="60"></a>
+          </td>
+        </tr>
+                            <tr>
+                                <td>16</td>
+                                <td>
+                                    <p><strong>Element location</strong></p>
+                                    <pre><code class="css text-wrap">strong</code></pre>
+                                    <p><strong>Element source</strong></p>
+                                    <pre><code class="html text-wrap">&lt;strong&gt;Are you enthusiastic about what you do?Then we want to meet you!&lt;/strong&gt;</code></pre>
+                                </td>
+                                <td>
+                                    <div class="wrapBreakWord">
+                                        <p>Fix any of the following:</p>
+                                        <ul class="text-muted">
+                                            <li>  Element has insufficient color contrast of 6.32 (foreground color: #5e5e5e, background color: #fcfcfc, font size: 9.8pt (13px), font weight: bold). Expected contrast ratio of 7:1</li>
+                                        </ul>
+                                    </div>
+                                    <p><strong>Related node:</strong></p>
+                                    <pre><code class="css text-wrap">#main</code></pre>
+                                </td>
+                            
+          <td>
+            <a href="https://contrast-compass.vercel.app?fg=%235e5e5e&amp;bg=%23fcfcfc&amp;threshold=7:1&amp;url=https%3A%2F%2Fwww.flexwind.com%2Fblog&amp;selector=strong" title="fix now" target="contrast-compass"><img src="https://contrast-compass.vercel.app/assets/compass-companion-120x100.webp" height="50" width="60"></a>
+          </td>
+        </tr>
+                            <tr>
+                                <td>17</td>
+                                <td>
+                                    <p><strong>Element location</strong></p>
+                                    <pre><code class="css text-wrap">p:nth-child(2)</code></pre>
+                                    <p><strong>Element source</strong></p>
+                                    <pre><code class="html text-wrap">&lt;p&gt;Apply online at the links below.&lt;/p&gt;</code></pre>
+                                </td>
+                                <td>
+                                    <div class="wrapBreakWord">
+                                        <p>Fix any of the following:</p>
+                                        <ul class="text-muted">
+                                            <li>  Element has insufficient color contrast of 6.32 (foreground color: #5e5e5e, background color: #fcfcfc, font size: 9.8pt (13px), font weight: normal). Expected contrast ratio of 7:1</li>
+                                        </ul>
+                                    </div>
+                                    <p><strong>Related node:</strong></p>
+                                    <pre><code class="css text-wrap">#main</code></pre>
+                                </td>
+                            
+          <td>
+            <a href="https://contrast-compass.vercel.app?fg=%235e5e5e&amp;bg=%23fcfcfc&amp;threshold=7:1&amp;url=https%3A%2F%2Fwww.flexwind.com%2Fblog&amp;selector=p%3Anth-child(2)" title="fix now" target="contrast-compass"><img src="https://contrast-compass.vercel.app/assets/compass-companion-120x100.webp" height="50" width="60"></a>
+          </td>
+        </tr>
+                            <tr>
+                                <td>18</td>
+                                <td>
+                                    <p><strong>Element location</strong></p>
+                                    <pre><code class="css text-wrap">.job-listing-widget &gt; li:nth-child(1) &gt; a</code></pre>
+                                    <p><strong>Element source</strong></p>
+                                    <pre><code class="html text-wrap">&lt;a href="https://www.flexwind.com/sjb-jobs/ux-designer-hybrid/"&gt;UX Designer — Hybrid&lt;/a&gt;</code></pre>
+                                </td>
+                                <td>
+                                    <div class="wrapBreakWord">
+                                        <p>Fix any of the following:</p>
+                                        <ul class="text-muted">
+                                            <li>  Element has insufficient color contrast of 4.73 (foreground color: #ca4042, background color: #fcfcfc, font size: 9.8pt (13px), font weight: normal). Expected contrast ratio of 7:1</li>
+                                        </ul>
+                                    </div>
+                                    <p><strong>Related node:</strong></p>
+                                    <pre><code class="css text-wrap">#main</code></pre>
+                                </td>
+                            
+          <td>
+            <a href="https://contrast-compass.vercel.app?fg=%23ca4042&amp;bg=%23fcfcfc&amp;threshold=7:1&amp;url=https%3A%2F%2Fwww.flexwind.com%2Fblog&amp;selector=.job-listing-widget%20%3E%20li%3Anth-child(1)%20%3E%20a" title="fix now" target="contrast-compass"><img src="https://contrast-compass.vercel.app/assets/compass-companion-120x100.webp" height="50" width="60"></a>
+          </td>
+        </tr>
+                            <tr>
+                                <td>19</td>
+                                <td>
+                                    <p><strong>Element location</strong></p>
+                                    <pre><code class="css text-wrap">li:nth-child(1) &gt; div</code></pre>
+                                    <p><strong>Element source</strong></p>
+                                    <pre><code class="html text-wrap">&lt;div&gt;&lt;i class="fa  fa-calendar-times-o"&gt;&lt;/i&gt; June 6, 2024&lt;/div&gt;</code></pre>
+                                </td>
+                                <td>
+                                    <div class="wrapBreakWord">
+                                        <p>Fix any of the following:</p>
+                                        <ul class="text-muted">
+                                            <li>  Element has insufficient color contrast of 6.32 (foreground color: #5e5e5e, background color: #fcfcfc, font size: 9.8pt (13px), font weight: normal). Expected contrast ratio of 7:1</li>
+                                        </ul>
+                                    </div>
+                                    <p><strong>Related node:</strong></p>
+                                    <pre><code class="css text-wrap">#main</code></pre>
+                                </td>
+                            
+          <td>
+            <a href="https://contrast-compass.vercel.app?fg=%235e5e5e&amp;bg=%23fcfcfc&amp;threshold=7:1&amp;url=https%3A%2F%2Fwww.flexwind.com%2Fblog&amp;selector=li%3Anth-child(1)%20%3E%20div" title="fix now" target="contrast-compass"><img src="https://contrast-compass.vercel.app/assets/compass-companion-120x100.webp" height="50" width="60"></a>
+          </td>
+        </tr>
+                            <tr>
+                                <td>20</td>
+                                <td>
+                                    <p><strong>Element location</strong></p>
+                                    <pre><code class="css text-wrap">.job-listing-widget &gt; li:nth-child(2) &gt; a</code></pre>
+                                    <p><strong>Element source</strong></p>
+                                    <pre><code class="html text-wrap">&lt;a href="https://www.flexwind.com/sjb-jobs/technical-portfolio-manager/"&gt;Technical Portfolio Manager&lt;/a&gt;</code></pre>
+                                </td>
+                                <td>
+                                    <div class="wrapBreakWord">
+                                        <p>Fix any of the following:</p>
+                                        <ul class="text-muted">
+                                            <li>  Element has insufficient color contrast of 4.73 (foreground color: #ca4042, background color: #fcfcfc, font size: 9.8pt (13px), font weight: normal). Expected contrast ratio of 7:1</li>
+                                        </ul>
+                                    </div>
+                                    <p><strong>Related node:</strong></p>
+                                    <pre><code class="css text-wrap">#main</code></pre>
+                                </td>
+                            
+          <td>
+            <a href="https://contrast-compass.vercel.app?fg=%23ca4042&amp;bg=%23fcfcfc&amp;threshold=7:1&amp;url=https%3A%2F%2Fwww.flexwind.com%2Fblog&amp;selector=.job-listing-widget%20%3E%20li%3Anth-child(2)%20%3E%20a" title="fix now" target="contrast-compass"><img src="https://contrast-compass.vercel.app/assets/compass-companion-120x100.webp" height="50" width="60"></a>
+          </td>
+        </tr>
+                            <tr>
+                                <td>21</td>
+                                <td>
+                                    <p><strong>Element location</strong></p>
+                                    <pre><code class="css text-wrap">li:nth-child(2) &gt; div</code></pre>
+                                    <p><strong>Element source</strong></p>
+                                    <pre><code class="html text-wrap">&lt;div&gt;&lt;i class="fa  fa-calendar-times-o"&gt;&lt;/i&gt; January 11, 2024&lt;/div&gt;</code></pre>
+                                </td>
+                                <td>
+                                    <div class="wrapBreakWord">
+                                        <p>Fix any of the following:</p>
+                                        <ul class="text-muted">
+                                            <li>  Element has insufficient color contrast of 6.32 (foreground color: #5e5e5e, background color: #fcfcfc, font size: 9.8pt (13px), font weight: normal). Expected contrast ratio of 7:1</li>
+                                        </ul>
+                                    </div>
+                                    <p><strong>Related node:</strong></p>
+                                    <pre><code class="css text-wrap">#main</code></pre>
+                                </td>
+                            
+          <td>
+            <a href="https://contrast-compass.vercel.app?fg=%235e5e5e&amp;bg=%23fcfcfc&amp;threshold=7:1&amp;url=https%3A%2F%2Fwww.flexwind.com%2Fblog&amp;selector=li%3Anth-child(2)%20%3E%20div" title="fix now" target="contrast-compass"><img src="https://contrast-compass.vercel.app/assets/compass-companion-120x100.webp" height="50" width="60"></a>
+          </td>
+        </tr>
+                            <tr>
+                                <td>22</td>
+                                <td>
+                                    <p><strong>Element location</strong></p>
+                                    <pre><code class="css text-wrap">.job-listing-widget &gt; li:nth-child(3) &gt; a</code></pre>
+                                    <p><strong>Element source</strong></p>
+                                    <pre><code class="html text-wrap">&lt;a href="https://www.flexwind.com/sjb-jobs/qa-specialist-applications-tester/"&gt;QA Specialist / Applications Tester&lt;/a&gt;</code></pre>
+                                </td>
+                                <td>
+                                    <div class="wrapBreakWord">
+                                        <p>Fix any of the following:</p>
+                                        <ul class="text-muted">
+                                            <li>  Element has insufficient color contrast of 4.73 (foreground color: #ca4042, background color: #fcfcfc, font size: 9.8pt (13px), font weight: normal). Expected contrast ratio of 7:1</li>
+                                        </ul>
+                                    </div>
+                                    <p><strong>Related node:</strong></p>
+                                    <pre><code class="css text-wrap">#main</code></pre>
+                                </td>
+                            
+          <td>
+            <a href="https://contrast-compass.vercel.app?fg=%23ca4042&amp;bg=%23fcfcfc&amp;threshold=7:1&amp;url=https%3A%2F%2Fwww.flexwind.com%2Fblog&amp;selector=.job-listing-widget%20%3E%20li%3Anth-child(3)%20%3E%20a" title="fix now" target="contrast-compass"><img src="https://contrast-compass.vercel.app/assets/compass-companion-120x100.webp" height="50" width="60"></a>
+          </td>
+        </tr>
+                            <tr>
+                                <td>23</td>
+                                <td>
+                                    <p><strong>Element location</strong></p>
+                                    <pre><code class="css text-wrap">li:nth-child(3) &gt; div</code></pre>
+                                    <p><strong>Element source</strong></p>
+                                    <pre><code class="html text-wrap">&lt;div&gt;&lt;i class="fa  fa-calendar-times-o"&gt;&lt;/i&gt; September 14, 2023&lt;/div&gt;</code></pre>
+                                </td>
+                                <td>
+                                    <div class="wrapBreakWord">
+                                        <p>Fix any of the following:</p>
+                                        <ul class="text-muted">
+                                            <li>  Element has insufficient color contrast of 6.32 (foreground color: #5e5e5e, background color: #fcfcfc, font size: 9.8pt (13px), font weight: normal). Expected contrast ratio of 7:1</li>
+                                        </ul>
+                                    </div>
+                                    <p><strong>Related node:</strong></p>
+                                    <pre><code class="css text-wrap">#main</code></pre>
+                                </td>
+                            
+          <td>
+            <a href="https://contrast-compass.vercel.app?fg=%235e5e5e&amp;bg=%23fcfcfc&amp;threshold=7:1&amp;url=https%3A%2F%2Fwww.flexwind.com%2Fblog&amp;selector=li%3Anth-child(3)%20%3E%20div" title="fix now" target="contrast-compass"><img src="https://contrast-compass.vercel.app/assets/compass-companion-120x100.webp" height="50" width="60"></a>
+          </td>
+        </tr>
+                            <tr>
+                                <td>24</td>
+                                <td>
+                                    <p><strong>Element location</strong></p>
+                                    <pre><code class="css text-wrap">.job-listing-widget &gt; li:nth-child(4) &gt; a</code></pre>
+                                    <p><strong>Element source</strong></p>
+                                    <pre><code class="html text-wrap">&lt;a href="https://www.flexwind.com/sjb-jobs/cloud-security-engineer/"&gt;Cloud Security Engineer&lt;/a&gt;</code></pre>
+                                </td>
+                                <td>
+                                    <div class="wrapBreakWord">
+                                        <p>Fix any of the following:</p>
+                                        <ul class="text-muted">
+                                            <li>  Element has insufficient color contrast of 4.73 (foreground color: #ca4042, background color: #fcfcfc, font size: 9.8pt (13px), font weight: normal). Expected contrast ratio of 7:1</li>
+                                        </ul>
+                                    </div>
+                                    <p><strong>Related node:</strong></p>
+                                    <pre><code class="css text-wrap">#main</code></pre>
+                                </td>
+                            
+          <td>
+            <a href="https://contrast-compass.vercel.app?fg=%23ca4042&amp;bg=%23fcfcfc&amp;threshold=7:1&amp;url=https%3A%2F%2Fwww.flexwind.com%2Fblog&amp;selector=.job-listing-widget%20%3E%20li%3Anth-child(4)%20%3E%20a" title="fix now" target="contrast-compass"><img src="https://contrast-compass.vercel.app/assets/compass-companion-120x100.webp" height="50" width="60"></a>
+          </td>
+        </tr>
+                            <tr>
+                                <td>25</td>
+                                <td>
+                                    <p><strong>Element location</strong></p>
+                                    <pre><code class="css text-wrap">li:nth-child(4) &gt; div</code></pre>
+                                    <p><strong>Element source</strong></p>
+                                    <pre><code class="html text-wrap">&lt;div&gt;&lt;i class="fa  fa-calendar-times-o"&gt;&lt;/i&gt; September 14, 2023&lt;/div&gt;</code></pre>
+                                </td>
+                                <td>
+                                    <div class="wrapBreakWord">
+                                        <p>Fix any of the following:</p>
+                                        <ul class="text-muted">
+                                            <li>  Element has insufficient color contrast of 6.32 (foreground color: #5e5e5e, background color: #fcfcfc, font size: 9.8pt (13px), font weight: normal). Expected contrast ratio of 7:1</li>
+                                        </ul>
+                                    </div>
+                                    <p><strong>Related node:</strong></p>
+                                    <pre><code class="css text-wrap">#main</code></pre>
+                                </td>
+                            
+          <td>
+            <a href="https://contrast-compass.vercel.app?fg=%235e5e5e&amp;bg=%23fcfcfc&amp;threshold=7:1&amp;url=https%3A%2F%2Fwww.flexwind.com%2Fblog&amp;selector=li%3Anth-child(4)%20%3E%20div" title="fix now" target="contrast-compass"><img src="https://contrast-compass.vercel.app/assets/compass-companion-120x100.webp" height="50" width="60"></a>
+          </td>
+        </tr>
+                            <tr>
+                                <td>26</td>
+                                <td>
+                                    <p><strong>Element location</strong></p>
+                                    <pre><code class="css text-wrap">.job-listing-widget &gt; li:nth-child(5) &gt; a</code></pre>
+                                    <p><strong>Element source</strong></p>
+                                    <pre><code class="html text-wrap">&lt;a href="https://www.flexwind.com/sjb-jobs/automated-tester/"&gt;Automated Tester&lt;/a&gt;</code></pre>
+                                </td>
+                                <td>
+                                    <div class="wrapBreakWord">
+                                        <p>Fix any of the following:</p>
+                                        <ul class="text-muted">
+                                            <li>  Element has insufficient color contrast of 4.73 (foreground color: #ca4042, background color: #fcfcfc, font size: 9.8pt (13px), font weight: normal). Expected contrast ratio of 7:1</li>
+                                        </ul>
+                                    </div>
+                                    <p><strong>Related node:</strong></p>
+                                    <pre><code class="css text-wrap">#main</code></pre>
+                                </td>
+                            
+          <td>
+            <a href="https://contrast-compass.vercel.app?fg=%23ca4042&amp;bg=%23fcfcfc&amp;threshold=7:1&amp;url=https%3A%2F%2Fwww.flexwind.com%2Fblog&amp;selector=.job-listing-widget%20%3E%20li%3Anth-child(5)%20%3E%20a" title="fix now" target="contrast-compass"><img src="https://contrast-compass.vercel.app/assets/compass-companion-120x100.webp" height="50" width="60"></a>
+          </td>
+        </tr>
+                            <tr>
+                                <td>27</td>
+                                <td>
+                                    <p><strong>Element location</strong></p>
+                                    <pre><code class="css text-wrap">li:nth-child(5) &gt; div</code></pre>
+                                    <p><strong>Element source</strong></p>
+                                    <pre><code class="html text-wrap">&lt;div&gt;&lt;i class="fa  fa-calendar-times-o"&gt;&lt;/i&gt; September 14, 2023&lt;/div&gt;</code></pre>
+                                </td>
+                                <td>
+                                    <div class="wrapBreakWord">
+                                        <p>Fix any of the following:</p>
+                                        <ul class="text-muted">
+                                            <li>  Element has insufficient color contrast of 6.32 (foreground color: #5e5e5e, background color: #fcfcfc, font size: 9.8pt (13px), font weight: normal). Expected contrast ratio of 7:1</li>
+                                        </ul>
+                                    </div>
+                                    <p><strong>Related node:</strong></p>
+                                    <pre><code class="css text-wrap">#main</code></pre>
+                                </td>
+                            
+          <td>
+            <a href="https://contrast-compass.vercel.app?fg=%235e5e5e&amp;bg=%23fcfcfc&amp;threshold=7:1&amp;url=https%3A%2F%2Fwww.flexwind.com%2Fblog&amp;selector=li%3Anth-child(5)%20%3E%20div" title="fix now" target="contrast-compass"><img src="https://contrast-compass.vercel.app/assets/compass-companion-120x100.webp" height="50" width="60"></a>
+          </td>
+        </tr>
+                            <tr>
+                                <td>28</td>
+                                <td>
+                                    <p><strong>Element location</strong></p>
+                                    <pre><code class="css text-wrap">li:nth-child(6) &gt; a</code></pre>
+                                    <p><strong>Element source</strong></p>
+                                    <pre><code class="html text-wrap">&lt;a href="https://www.flexwind.com/sjb-jobs/senior-systems-engineer/"&gt;Senior Systems Engineer&lt;/a&gt;</code></pre>
+                                </td>
+                                <td>
+                                    <div class="wrapBreakWord">
+                                        <p>Fix any of the following:</p>
+                                        <ul class="text-muted">
+                                            <li>  Element has insufficient color contrast of 4.73 (foreground color: #ca4042, background color: #fcfcfc, font size: 9.8pt (13px), font weight: normal). Expected contrast ratio of 7:1</li>
+                                        </ul>
+                                    </div>
+                                    <p><strong>Related node:</strong></p>
+                                    <pre><code class="css text-wrap">#main</code></pre>
+                                </td>
+                            
+          <td>
+            <a href="https://contrast-compass.vercel.app?fg=%23ca4042&amp;bg=%23fcfcfc&amp;threshold=7:1&amp;url=https%3A%2F%2Fwww.flexwind.com%2Fblog&amp;selector=li%3Anth-child(6)%20%3E%20a" title="fix now" target="contrast-compass"><img src="https://contrast-compass.vercel.app/assets/compass-companion-120x100.webp" height="50" width="60"></a>
+          </td>
+        </tr>
+                            <tr>
+                                <td>29</td>
+                                <td>
+                                    <p><strong>Element location</strong></p>
+                                    <pre><code class="css text-wrap">li:nth-child(6) &gt; div</code></pre>
+                                    <p><strong>Element source</strong></p>
+                                    <pre><code class="html text-wrap">&lt;div&gt;&lt;i class="fa  fa-calendar-times-o"&gt;&lt;/i&gt; September 14, 2023&lt;/div&gt;</code></pre>
+                                </td>
+                                <td>
+                                    <div class="wrapBreakWord">
+                                        <p>Fix any of the following:</p>
+                                        <ul class="text-muted">
+                                            <li>  Element has insufficient color contrast of 6.32 (foreground color: #5e5e5e, background color: #fcfcfc, font size: 9.8pt (13px), font weight: normal). Expected contrast ratio of 7:1</li>
+                                        </ul>
+                                    </div>
+                                    <p><strong>Related node:</strong></p>
+                                    <pre><code class="css text-wrap">#main</code></pre>
+                                </td>
+                            
+          <td>
+            <a href="https://contrast-compass.vercel.app?fg=%235e5e5e&amp;bg=%23fcfcfc&amp;threshold=7:1&amp;url=https%3A%2F%2Fwww.flexwind.com%2Fblog&amp;selector=li%3Anth-child(6)%20%3E%20div" title="fix now" target="contrast-compass"><img src="https://contrast-compass.vercel.app/assets/compass-companion-120x100.webp" height="50" width="60"></a>
+          </td>
+        </tr>
+                            <tr>
+                                <td>30</td>
+                                <td>
+                                    <p><strong>Element location</strong></p>
+                                    <pre><code class="css text-wrap">li:nth-child(7) &gt; a</code></pre>
+                                    <p><strong>Element source</strong></p>
+                                    <pre><code class="html text-wrap">&lt;a href="https://www.flexwind.com/sjb-jobs/senior-systems-integrator/"&gt;Senior Systems Integrator&lt;/a&gt;</code></pre>
+                                </td>
+                                <td>
+                                    <div class="wrapBreakWord">
+                                        <p>Fix any of the following:</p>
+                                        <ul class="text-muted">
+                                            <li>  Element has insufficient color contrast of 4.73 (foreground color: #ca4042, background color: #fcfcfc, font size: 9.8pt (13px), font weight: normal). Expected contrast ratio of 7:1</li>
+                                        </ul>
+                                    </div>
+                                    <p><strong>Related node:</strong></p>
+                                    <pre><code class="css text-wrap">#main</code></pre>
+                                </td>
+                            
+          <td>
+            <a href="https://contrast-compass.vercel.app?fg=%23ca4042&amp;bg=%23fcfcfc&amp;threshold=7:1&amp;url=https%3A%2F%2Fwww.flexwind.com%2Fblog&amp;selector=li%3Anth-child(7)%20%3E%20a" title="fix now" target="contrast-compass"><img src="https://contrast-compass.vercel.app/assets/compass-companion-120x100.webp" height="50" width="60"></a>
+          </td>
+        </tr>
+                            <tr>
+                                <td>31</td>
+                                <td>
+                                    <p><strong>Element location</strong></p>
+                                    <pre><code class="css text-wrap">li:nth-child(7) &gt; div</code></pre>
+                                    <p><strong>Element source</strong></p>
+                                    <pre><code class="html text-wrap">&lt;div&gt;&lt;i class="fa  fa-calendar-times-o"&gt;&lt;/i&gt; September 14, 2023&lt;/div&gt;</code></pre>
+                                </td>
+                                <td>
+                                    <div class="wrapBreakWord">
+                                        <p>Fix any of the following:</p>
+                                        <ul class="text-muted">
+                                            <li>  Element has insufficient color contrast of 6.32 (foreground color: #5e5e5e, background color: #fcfcfc, font size: 9.8pt (13px), font weight: normal). Expected contrast ratio of 7:1</li>
+                                        </ul>
+                                    </div>
+                                    <p><strong>Related node:</strong></p>
+                                    <pre><code class="css text-wrap">#main</code></pre>
+                                </td>
+                            
+          <td>
+            <a href="https://contrast-compass.vercel.app?fg=%235e5e5e&amp;bg=%23fcfcfc&amp;threshold=7:1&amp;url=https%3A%2F%2Fwww.flexwind.com%2Fblog&amp;selector=li%3Anth-child(7)%20%3E%20div" title="fix now" target="contrast-compass"><img src="https://contrast-compass.vercel.app/assets/compass-companion-120x100.webp" height="50" width="60"></a>
+          </td>
+        </tr>
+                            <tr>
+                                <td>32</td>
+                                <td>
+                                    <p><strong>Element location</strong></p>
+                                    <pre><code class="css text-wrap">li:nth-child(8) &gt; a</code></pre>
+                                    <p><strong>Element source</strong></p>
+                                    <pre><code class="html text-wrap">&lt;a href="https://www.flexwind.com/sjb-jobs/senior-cyber-security-engineer/"&gt;Senior Cyber Security Engineer&lt;/a&gt;</code></pre>
+                                </td>
+                                <td>
+                                    <div class="wrapBreakWord">
+                                        <p>Fix any of the following:</p>
+                                        <ul class="text-muted">
+                                            <li>  Element has insufficient color contrast of 4.73 (foreground color: #ca4042, background color: #fcfcfc, font size: 9.8pt (13px), font weight: normal). Expected contrast ratio of 7:1</li>
+                                        </ul>
+                                    </div>
+                                    <p><strong>Related node:</strong></p>
+                                    <pre><code class="css text-wrap">#main</code></pre>
+                                </td>
+                            
+          <td>
+            <a href="https://contrast-compass.vercel.app?fg=%23ca4042&amp;bg=%23fcfcfc&amp;threshold=7:1&amp;url=https%3A%2F%2Fwww.flexwind.com%2Fblog&amp;selector=li%3Anth-child(8)%20%3E%20a" title="fix now" target="contrast-compass"><img src="https://contrast-compass.vercel.app/assets/compass-companion-120x100.webp" height="50" width="60"></a>
+          </td>
+        </tr>
+                            <tr>
+                                <td>33</td>
+                                <td>
+                                    <p><strong>Element location</strong></p>
+                                    <pre><code class="css text-wrap">li:nth-child(8) &gt; div</code></pre>
+                                    <p><strong>Element source</strong></p>
+                                    <pre><code class="html text-wrap">&lt;div&gt;&lt;i class="fa  fa-calendar-times-o"&gt;&lt;/i&gt; September 12, 2023&lt;/div&gt;</code></pre>
+                                </td>
+                                <td>
+                                    <div class="wrapBreakWord">
+                                        <p>Fix any of the following:</p>
+                                        <ul class="text-muted">
+                                            <li>  Element has insufficient color contrast of 6.32 (foreground color: #5e5e5e, background color: #fcfcfc, font size: 9.8pt (13px), font weight: normal). Expected contrast ratio of 7:1</li>
+                                        </ul>
+                                    </div>
+                                    <p><strong>Related node:</strong></p>
+                                    <pre><code class="css text-wrap">#main</code></pre>
+                                </td>
+                            
+          <td>
+            <a href="https://contrast-compass.vercel.app?fg=%235e5e5e&amp;bg=%23fcfcfc&amp;threshold=7:1&amp;url=https%3A%2F%2Fwww.flexwind.com%2Fblog&amp;selector=li%3Anth-child(8)%20%3E%20div" title="fix now" target="contrast-compass"><img src="https://contrast-compass.vercel.app/assets/compass-companion-120x100.webp" height="50" width="60"></a>
+          </td>
+        </tr>
+                            <tr>
+                                <td>34</td>
+                                <td>
+                                    <p><strong>Element location</strong></p>
+                                    <pre><code class="css text-wrap">li:nth-child(9) &gt; a</code></pre>
+                                    <p><strong>Element source</strong></p>
+                                    <pre><code class="html text-wrap">&lt;a href="https://www.flexwind.com/sjb-jobs/ux-designer/"&gt;UX Designer&lt;/a&gt;</code></pre>
+                                </td>
+                                <td>
+                                    <div class="wrapBreakWord">
+                                        <p>Fix any of the following:</p>
+                                        <ul class="text-muted">
+                                            <li>  Element has insufficient color contrast of 4.73 (foreground color: #ca4042, background color: #fcfcfc, font size: 9.8pt (13px), font weight: normal). Expected contrast ratio of 7:1</li>
+                                        </ul>
+                                    </div>
+                                    <p><strong>Related node:</strong></p>
+                                    <pre><code class="css text-wrap">#main</code></pre>
+                                </td>
+                            
+          <td>
+            <a href="https://contrast-compass.vercel.app?fg=%23ca4042&amp;bg=%23fcfcfc&amp;threshold=7:1&amp;url=https%3A%2F%2Fwww.flexwind.com%2Fblog&amp;selector=li%3Anth-child(9)%20%3E%20a" title="fix now" target="contrast-compass"><img src="https://contrast-compass.vercel.app/assets/compass-companion-120x100.webp" height="50" width="60"></a>
+          </td>
+        </tr>
+                            <tr>
+                                <td>35</td>
+                                <td>
+                                    <p><strong>Element location</strong></p>
+                                    <pre><code class="css text-wrap">li:nth-child(9) &gt; div</code></pre>
+                                    <p><strong>Element source</strong></p>
+                                    <pre><code class="html text-wrap">&lt;div&gt;&lt;i class="fa  fa-calendar-times-o"&gt;&lt;/i&gt; September 1, 2023&lt;/div&gt;</code></pre>
+                                </td>
+                                <td>
+                                    <div class="wrapBreakWord">
+                                        <p>Fix any of the following:</p>
+                                        <ul class="text-muted">
+                                            <li>  Element has insufficient color contrast of 6.32 (foreground color: #5e5e5e, background color: #fcfcfc, font size: 9.8pt (13px), font weight: normal). Expected contrast ratio of 7:1</li>
+                                        </ul>
+                                    </div>
+                                    <p><strong>Related node:</strong></p>
+                                    <pre><code class="css text-wrap">#main</code></pre>
+                                </td>
+                            
+          <td>
+            <a href="https://contrast-compass.vercel.app?fg=%235e5e5e&amp;bg=%23fcfcfc&amp;threshold=7:1&amp;url=https%3A%2F%2Fwww.flexwind.com%2Fblog&amp;selector=li%3Anth-child(9)%20%3E%20div" title="fix now" target="contrast-compass"><img src="https://contrast-compass.vercel.app/assets/compass-companion-120x100.webp" height="50" width="60"></a>
+          </td>
+        </tr>
+                            <tr>
+                                <td>36</td>
+                                <td>
+                                    <p><strong>Element location</strong></p>
+                                    <pre><code class="css text-wrap">#site-info &gt; span</code></pre>
+                                    <p><strong>Element source</strong></p>
+                                    <pre><code class="html text-wrap">&lt;span&gt;Flexwind.com © 2024&lt;/span&gt;</code></pre>
+                                </td>
+                                <td>
+                                    <div class="wrapBreakWord">
+                                        <p>Fix any of the following:</p>
+                                        <ul class="text-muted">
+                                            <li>  Element has insufficient color contrast of 5.68 (foreground color: #aaaaaa, background color: #2f3033, font size: 8.6pt (11.5px), font weight: normal). Expected contrast ratio of 7:1</li>
+                                        </ul>
+                                    </div>
+                                    <p><strong>Related node:</strong></p>
+                                    <pre><code class="css text-wrap">#colophon</code></pre>
+                                </td>
+                            
+          <td>
+            <a href="https://contrast-compass.vercel.app?fg=%23aaaaaa&amp;bg=%232f3033&amp;threshold=7:1&amp;url=https%3A%2F%2Fwww.flexwind.com%2Fblog&amp;selector=%23site-info%20%3E%20span" title="fix now" target="contrast-compass"><img src="https://contrast-compass.vercel.app/assets/compass-companion-120x100.webp" height="50" width="60"></a>
+          </td>
+        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="card violationCard">
+            <div class="card-body">
+                <div class="violationCardLine">
+                    <h5 class="card-title violationCardTitleItem">
+                        <a id="2">2.</a> Elements must meet minimum color contrast ratio thresholds
+                    </h5>
+                    <a href="https://dequeuniversity.com/rules/axe/4.9/color-contrast?application=playwright" target="_blank" class="card-link violationCardTitleItem learnMore">Learn
+                        more</a>
+                </div>
+                <div class="violationCardLine">
+                    <h6 class="card-subtitle mb-2 text-muted">color-contrast</h6>
+                    <h6 class="card-subtitle mb-2 text-muted violationCardTitleItem">
+                        WCAG 2 Level AA, WCAG 1.4.3
+                    </h6>
+                </div>
+                <div class="violationCardLine">
+                    <p class="card-text">Ensures the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds</p>
+                    <h6 class="card-subtitle mb-2 text-muted violationCardTitleItem">
+                        serious
+                    </h6>
+                </div>
+                <div class="violationCardLine">
+                    <h6 class="card-subtitle mb-2 text-muted violationCardTitleItem">
+                        Issue Tags: 
+                        <span class="badge bg-light text-dark"> cat.color </span>
+
+                        <span class="badge bg-light text-dark"> wcag2aa </span>
+
+                        <span class="badge bg-light text-dark"> wcag143 </span>
+
+                        <span class="badge bg-light text-dark"> TTv5 </span>
+
+                        <span class="badge bg-light text-dark"> TT13.c </span>
+
+                        <span class="badge bg-light text-dark"> EN-301-549 </span>
+
+                        <span class="badge bg-light text-dark"> EN-9.1.4.3 </span>
+
+                        <span class="badge bg-light text-dark"> ACT </span>
+                    </h6>
+                </div>
+                <div class="violationNode">
+                    <table class="table table-sm table-bordered" id="color-contrast-violations-table">
+                        <thead>
+                            <tr>
+                                <th style="width: 2%">#</th>
+                                <th style="width: 49%">Issue Description</th>
+                                <th style="width: 49%">
+                                    To solve this violation, you need to...
+                                </th>
+                            <th>Fix Now</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>
+                                    <p><strong>Element location</strong></p>
+                                    <pre><code class="css text-wrap">#post-1158 &gt; .entry-main &gt; .entry-header &gt; .entry-meta</code></pre>
+                                    <p><strong>Element source</strong></p>
+                                    <pre><code class="html text-wrap">&lt;div class="entry-meta"&gt;</code></pre>
+                                </td>
+                                <td>
+                                    <div class="wrapBreakWord">
+                                        <p>Fix any of the following:</p>
+                                        <ul class="text-muted">
+                                            <li>  Element has insufficient color contrast of 3.15 (foreground color: #8f8f8f, background color: #fcfcfc, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1</li>
+                                        </ul>
+                                    </div>
+                                    <p><strong>Related node:</strong></p>
+                                    <pre><code class="css text-wrap">#main</code></pre>
+                                </td>
+                            
+          <td>
+            <a href="https://contrast-compass.vercel.app?fg=%238f8f8f&amp;bg=%23fcfcfc&amp;threshold=4.5:1&amp;url=https%3A%2F%2Fwww.flexwind.com%2Fblog&amp;selector=%23post-1158%20%3E%20.entry-main%20%3E%20.entry-header%20%3E%20.entry-meta" title="fix now" target="contrast-compass"><img src="https://contrast-compass.vercel.app/assets/compass-companion-120x100.webp" height="50" width="60"></a>
+          </td>
+        </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>
+                                    <p><strong>Element location</strong></p>
+                                    <pre><code class="css text-wrap">#post-1158 &gt; .entry-main &gt; .entry-content &gt; .more-link</code></pre>
+                                    <p><strong>Element source</strong></p>
+                                    <pre><code class="html text-wrap">&lt;a class="more-link" href="https://www.flexwind.com/user-experience/strengthen-your-ux-soft-skills/"&gt;Continue Reading&lt;span class="meta-nav"&gt;→&lt;/span&gt;&lt;/a&gt;</code></pre>
+                                </td>
+                                <td>
+                                    <div class="wrapBreakWord">
+                                        <p>Fix any of the following:</p>
+                                        <ul class="text-muted">
+                                            <li>  Element has insufficient color contrast of 2.54 (foreground color: #ffffff, background color: #49add7, font size: 8.3pt (11px), font weight: bold). Expected contrast ratio of 4.5:1</li>
+                                        </ul>
+                                    </div>
+                                    <p><strong>Related node:</strong></p>
+                                    <pre><code class="css text-wrap">#post-1158 &gt; .entry-main &gt; .entry-content &gt; .more-link</code></pre>
+                                </td>
+                            
+          <td>
+            <a href="https://contrast-compass.vercel.app?fg=%23ffffff&amp;bg=%2349add7&amp;threshold=4.5:1&amp;url=https%3A%2F%2Fwww.flexwind.com%2Fblog&amp;selector=%23post-1158%20%3E%20.entry-main%20%3E%20.entry-content%20%3E%20.more-link" title="fix now" target="contrast-compass"><img src="https://contrast-compass.vercel.app/assets/compass-companion-120x100.webp" height="50" width="60"></a>
+          </td>
+        </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>
+                                    <p><strong>Element location</strong></p>
+                                    <pre><code class="css text-wrap">#post-933 &gt; .entry-main &gt; .entry-header &gt; .entry-meta</code></pre>
+                                    <p><strong>Element source</strong></p>
+                                    <pre><code class="html text-wrap">&lt;div class="entry-meta"&gt;</code></pre>
+                                </td>
+                                <td>
+                                    <div class="wrapBreakWord">
+                                        <p>Fix any of the following:</p>
+                                        <ul class="text-muted">
+                                            <li>  Element has insufficient color contrast of 3.15 (foreground color: #8f8f8f, background color: #fcfcfc, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1</li>
+                                        </ul>
+                                    </div>
+                                    <p><strong>Related node:</strong></p>
+                                    <pre><code class="css text-wrap">#main</code></pre>
+                                </td>
+                            
+          <td>
+            <a href="https://contrast-compass.vercel.app?fg=%238f8f8f&amp;bg=%23fcfcfc&amp;threshold=4.5:1&amp;url=https%3A%2F%2Fwww.flexwind.com%2Fblog&amp;selector=%23post-933%20%3E%20.entry-main%20%3E%20.entry-header%20%3E%20.entry-meta" title="fix now" target="contrast-compass"><img src="https://contrast-compass.vercel.app/assets/compass-companion-120x100.webp" height="50" width="60"></a>
+          </td>
+        </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>
+                                    <p><strong>Element location</strong></p>
+                                    <pre><code class="css text-wrap">#post-933 &gt; .entry-main &gt; .entry-content &gt; .more-link</code></pre>
+                                    <p><strong>Element source</strong></p>
+                                    <pre><code class="html text-wrap">&lt;a class="more-link" href="https://www.flexwind.com/user-experience/build-trust-through-better-ux-design/"&gt;Continue Reading&lt;span class="meta-nav"&gt;→&lt;/span&gt;&lt;/a&gt;</code></pre>
+                                </td>
+                                <td>
+                                    <div class="wrapBreakWord">
+                                        <p>Fix any of the following:</p>
+                                        <ul class="text-muted">
+                                            <li>  Element has insufficient color contrast of 2.54 (foreground color: #ffffff, background color: #49add7, font size: 8.3pt (11px), font weight: bold). Expected contrast ratio of 4.5:1</li>
+                                        </ul>
+                                    </div>
+                                    <p><strong>Related node:</strong></p>
+                                    <pre><code class="css text-wrap">#post-933 &gt; .entry-main &gt; .entry-content &gt; .more-link</code></pre>
+                                </td>
+                            
+          <td>
+            <a href="https://contrast-compass.vercel.app?fg=%23ffffff&amp;bg=%2349add7&amp;threshold=4.5:1&amp;url=https%3A%2F%2Fwww.flexwind.com%2Fblog&amp;selector=%23post-933%20%3E%20.entry-main%20%3E%20.entry-content%20%3E%20.more-link" title="fix now" target="contrast-compass"><img src="https://contrast-compass.vercel.app/assets/compass-companion-120x100.webp" height="50" width="60"></a>
+          </td>
+        </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>
+                                    <p><strong>Element location</strong></p>
+                                    <pre><code class="css text-wrap">#post-923 &gt; .entry-main &gt; .entry-header &gt; .entry-meta</code></pre>
+                                    <p><strong>Element source</strong></p>
+                                    <pre><code class="html text-wrap">&lt;div class="entry-meta"&gt;</code></pre>
+                                </td>
+                                <td>
+                                    <div class="wrapBreakWord">
+                                        <p>Fix any of the following:</p>
+                                        <ul class="text-muted">
+                                            <li>  Element has insufficient color contrast of 3.15 (foreground color: #8f8f8f, background color: #fcfcfc, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1</li>
+                                        </ul>
+                                    </div>
+                                    <p><strong>Related node:</strong></p>
+                                    <pre><code class="css text-wrap">#main</code></pre>
+                                </td>
+                            
+          <td>
+            <a href="https://contrast-compass.vercel.app?fg=%238f8f8f&amp;bg=%23fcfcfc&amp;threshold=4.5:1&amp;url=https%3A%2F%2Fwww.flexwind.com%2Fblog&amp;selector=%23post-923%20%3E%20.entry-main%20%3E%20.entry-header%20%3E%20.entry-meta" title="fix now" target="contrast-compass"><img src="https://contrast-compass.vercel.app/assets/compass-companion-120x100.webp" height="50" width="60"></a>
+          </td>
+        </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>
+                                    <p><strong>Element location</strong></p>
+                                    <pre><code class="css text-wrap">#post-923 &gt; .entry-main &gt; .entry-content &gt; .more-link</code></pre>
+                                    <p><strong>Element source</strong></p>
+                                    <pre><code class="html text-wrap">&lt;a class="more-link" href="https://www.flexwind.com/user-experience/usability-expert-review-to-improve-grants-management-app-a-ux-case-study/"&gt;Continue Reading&lt;span class="meta-nav"&gt;→&lt;/span&gt;&lt;/a&gt;</code></pre>
+                                </td>
+                                <td>
+                                    <div class="wrapBreakWord">
+                                        <p>Fix any of the following:</p>
+                                        <ul class="text-muted">
+                                            <li>  Element has insufficient color contrast of 2.54 (foreground color: #ffffff, background color: #49add7, font size: 8.3pt (11px), font weight: bold). Expected contrast ratio of 4.5:1</li>
+                                        </ul>
+                                    </div>
+                                    <p><strong>Related node:</strong></p>
+                                    <pre><code class="css text-wrap">#post-923 &gt; .entry-main &gt; .entry-content &gt; .more-link</code></pre>
+                                </td>
+                            
+          <td>
+            <a href="https://contrast-compass.vercel.app?fg=%23ffffff&amp;bg=%2349add7&amp;threshold=4.5:1&amp;url=https%3A%2F%2Fwww.flexwind.com%2Fblog&amp;selector=%23post-923%20%3E%20.entry-main%20%3E%20.entry-content%20%3E%20.more-link" title="fix now" target="contrast-compass"><img src="https://contrast-compass.vercel.app/assets/compass-companion-120x100.webp" height="50" width="60"></a>
+          </td>
+        </tr>
+                            <tr>
+                                <td>7</td>
+                                <td>
+                                    <p><strong>Element location</strong></p>
+                                    <pre><code class="css text-wrap">#post-913 &gt; .entry-main &gt; .entry-header &gt; .entry-meta</code></pre>
+                                    <p><strong>Element source</strong></p>
+                                    <pre><code class="html text-wrap">&lt;div class="entry-meta"&gt;</code></pre>
+                                </td>
+                                <td>
+                                    <div class="wrapBreakWord">
+                                        <p>Fix any of the following:</p>
+                                        <ul class="text-muted">
+                                            <li>  Element has insufficient color contrast of 3.15 (foreground color: #8f8f8f, background color: #fcfcfc, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1</li>
+                                        </ul>
+                                    </div>
+                                    <p><strong>Related node:</strong></p>
+                                    <pre><code class="css text-wrap">#main</code></pre>
+                                </td>
+                            
+          <td>
+            <a href="https://contrast-compass.vercel.app?fg=%238f8f8f&amp;bg=%23fcfcfc&amp;threshold=4.5:1&amp;url=https%3A%2F%2Fwww.flexwind.com%2Fblog&amp;selector=%23post-913%20%3E%20.entry-main%20%3E%20.entry-header%20%3E%20.entry-meta" title="fix now" target="contrast-compass"><img src="https://contrast-compass.vercel.app/assets/compass-companion-120x100.webp" height="50" width="60"></a>
+          </td>
+        </tr>
+                            <tr>
+                                <td>8</td>
+                                <td>
+                                    <p><strong>Element location</strong></p>
+                                    <pre><code class="css text-wrap">#post-913 &gt; .entry-main &gt; .entry-content &gt; .more-link</code></pre>
+                                    <p><strong>Element source</strong></p>
+                                    <pre><code class="html text-wrap">&lt;a class="more-link" href="https://www.flexwind.com/software-development/automated-data-profiling-ingest-the-right-data-with-confidence/"&gt;Continue Reading&lt;span class="meta-nav"&gt;→&lt;/span&gt;&lt;/a&gt;</code></pre>
+                                </td>
+                                <td>
+                                    <div class="wrapBreakWord">
+                                        <p>Fix any of the following:</p>
+                                        <ul class="text-muted">
+                                            <li>  Element has insufficient color contrast of 2.54 (foreground color: #ffffff, background color: #49add7, font size: 8.3pt (11px), font weight: bold). Expected contrast ratio of 4.5:1</li>
+                                        </ul>
+                                    </div>
+                                    <p><strong>Related node:</strong></p>
+                                    <pre><code class="css text-wrap">#post-913 &gt; .entry-main &gt; .entry-content &gt; .more-link</code></pre>
+                                </td>
+                            
+          <td>
+            <a href="https://contrast-compass.vercel.app?fg=%23ffffff&amp;bg=%2349add7&amp;threshold=4.5:1&amp;url=https%3A%2F%2Fwww.flexwind.com%2Fblog&amp;selector=%23post-913%20%3E%20.entry-main%20%3E%20.entry-content%20%3E%20.more-link" title="fix now" target="contrast-compass"><img src="https://contrast-compass.vercel.app/assets/compass-companion-120x100.webp" height="50" width="60"></a>
+          </td>
+        </tr>
+                            <tr>
+                                <td>9</td>
+                                <td>
+                                    <p><strong>Element location</strong></p>
+                                    <pre><code class="css text-wrap">#post-872 &gt; .entry-main &gt; .entry-header &gt; .entry-meta</code></pre>
+                                    <p><strong>Element source</strong></p>
+                                    <pre><code class="html text-wrap">&lt;div class="entry-meta"&gt;</code></pre>
+                                </td>
+                                <td>
+                                    <div class="wrapBreakWord">
+                                        <p>Fix any of the following:</p>
+                                        <ul class="text-muted">
+                                            <li>  Element has insufficient color contrast of 3.15 (foreground color: #8f8f8f, background color: #fcfcfc, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1</li>
+                                        </ul>
+                                    </div>
+                                    <p><strong>Related node:</strong></p>
+                                    <pre><code class="css text-wrap">#main</code></pre>
+                                </td>
+                            
+          <td>
+            <a href="https://contrast-compass.vercel.app?fg=%238f8f8f&amp;bg=%23fcfcfc&amp;threshold=4.5:1&amp;url=https%3A%2F%2Fwww.flexwind.com%2Fblog&amp;selector=%23post-872%20%3E%20.entry-main%20%3E%20.entry-header%20%3E%20.entry-meta" title="fix now" target="contrast-compass"><img src="https://contrast-compass.vercel.app/assets/compass-companion-120x100.webp" height="50" width="60"></a>
+          </td>
+        </tr>
+                            <tr>
+                                <td>10</td>
+                                <td>
+                                    <p><strong>Element location</strong></p>
+                                    <pre><code class="css text-wrap">#post-872 &gt; .entry-main &gt; .entry-content &gt; .more-link</code></pre>
+                                    <p><strong>Element source</strong></p>
+                                    <pre><code class="html text-wrap">&lt;a class="more-link" href="https://www.flexwind.com/user-experience/usability-heuristics-in-action-examples-from-everyday-life/"&gt;Continue Reading&lt;span class="meta-nav"&gt;→&lt;/span&gt;&lt;/a&gt;</code></pre>
+                                </td>
+                                <td>
+                                    <div class="wrapBreakWord">
+                                        <p>Fix any of the following:</p>
+                                        <ul class="text-muted">
+                                            <li>  Element has insufficient color contrast of 2.54 (foreground color: #ffffff, background color: #49add7, font size: 8.3pt (11px), font weight: bold). Expected contrast ratio of 4.5:1</li>
+                                        </ul>
+                                    </div>
+                                    <p><strong>Related node:</strong></p>
+                                    <pre><code class="css text-wrap">#post-872 &gt; .entry-main &gt; .entry-content &gt; .more-link</code></pre>
+                                </td>
+                            
+          <td>
+            <a href="https://contrast-compass.vercel.app?fg=%23ffffff&amp;bg=%2349add7&amp;threshold=4.5:1&amp;url=https%3A%2F%2Fwww.flexwind.com%2Fblog&amp;selector=%23post-872%20%3E%20.entry-main%20%3E%20.entry-content%20%3E%20.more-link" title="fix now" target="contrast-compass"><img src="https://contrast-compass.vercel.app/assets/compass-companion-120x100.webp" height="50" width="60"></a>
+          </td>
+        </tr>
+                            <tr>
+                                <td>11</td>
+                                <td>
+                                    <p><strong>Element location</strong></p>
+                                    <pre><code class="css text-wrap">#post-852 &gt; .entry-main &gt; .entry-header &gt; .entry-meta</code></pre>
+                                    <p><strong>Element source</strong></p>
+                                    <pre><code class="html text-wrap">&lt;div class="entry-meta"&gt;</code></pre>
+                                </td>
+                                <td>
+                                    <div class="wrapBreakWord">
+                                        <p>Fix any of the following:</p>
+                                        <ul class="text-muted">
+                                            <li>  Element has insufficient color contrast of 3.15 (foreground color: #8f8f8f, background color: #fcfcfc, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1</li>
+                                        </ul>
+                                    </div>
+                                    <p><strong>Related node:</strong></p>
+                                    <pre><code class="css text-wrap">#main</code></pre>
+                                </td>
+                            
+          <td>
+            <a href="https://contrast-compass.vercel.app?fg=%238f8f8f&amp;bg=%23fcfcfc&amp;threshold=4.5:1&amp;url=https%3A%2F%2Fwww.flexwind.com%2Fblog&amp;selector=%23post-852%20%3E%20.entry-main%20%3E%20.entry-header%20%3E%20.entry-meta" title="fix now" target="contrast-compass"><img src="https://contrast-compass.vercel.app/assets/compass-companion-120x100.webp" height="50" width="60"></a>
+          </td>
+        </tr>
+                            <tr>
+                                <td>12</td>
+                                <td>
+                                    <p><strong>Element location</strong></p>
+                                    <pre><code class="css text-wrap">#post-852 &gt; .entry-main &gt; .entry-content &gt; .more-link</code></pre>
+                                    <p><strong>Element source</strong></p>
+                                    <pre><code class="html text-wrap">&lt;a class="more-link" href="https://www.flexwind.com/user-experience/developers-and-ux-designers-can-find-common-ground/"&gt;Continue Reading&lt;span class="meta-nav"&gt;→&lt;/span&gt;&lt;/a&gt;</code></pre>
+                                </td>
+                                <td>
+                                    <div class="wrapBreakWord">
+                                        <p>Fix any of the following:</p>
+                                        <ul class="text-muted">
+                                            <li>  Element has insufficient color contrast of 2.54 (foreground color: #ffffff, background color: #49add7, font size: 8.3pt (11px), font weight: bold). Expected contrast ratio of 4.5:1</li>
+                                        </ul>
+                                    </div>
+                                    <p><strong>Related node:</strong></p>
+                                    <pre><code class="css text-wrap">#post-852 &gt; .entry-main &gt; .entry-content &gt; .more-link</code></pre>
+                                </td>
+                            
+          <td>
+            <a href="https://contrast-compass.vercel.app?fg=%23ffffff&amp;bg=%2349add7&amp;threshold=4.5:1&amp;url=https%3A%2F%2Fwww.flexwind.com%2Fblog&amp;selector=%23post-852%20%3E%20.entry-main%20%3E%20.entry-content%20%3E%20.more-link" title="fix now" target="contrast-compass"><img src="https://contrast-compass.vercel.app/assets/compass-companion-120x100.webp" height="50" width="60"></a>
+          </td>
+        </tr>
+                            <tr>
+                                <td>13</td>
+                                <td>
+                                    <p><strong>Element location</strong></p>
+                                    <pre><code class="css text-wrap">#post-849 &gt; .entry-main &gt; .entry-header &gt; .entry-meta</code></pre>
+                                    <p><strong>Element source</strong></p>
+                                    <pre><code class="html text-wrap">&lt;div class="entry-meta"&gt;</code></pre>
+                                </td>
+                                <td>
+                                    <div class="wrapBreakWord">
+                                        <p>Fix any of the following:</p>
+                                        <ul class="text-muted">
+                                            <li>  Element has insufficient color contrast of 3.15 (foreground color: #8f8f8f, background color: #fcfcfc, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1</li>
+                                        </ul>
+                                    </div>
+                                    <p><strong>Related node:</strong></p>
+                                    <pre><code class="css text-wrap">#main</code></pre>
+                                </td>
+                            
+          <td>
+            <a href="https://contrast-compass.vercel.app?fg=%238f8f8f&amp;bg=%23fcfcfc&amp;threshold=4.5:1&amp;url=https%3A%2F%2Fwww.flexwind.com%2Fblog&amp;selector=%23post-849%20%3E%20.entry-main%20%3E%20.entry-header%20%3E%20.entry-meta" title="fix now" target="contrast-compass"><img src="https://contrast-compass.vercel.app/assets/compass-companion-120x100.webp" height="50" width="60"></a>
+          </td>
+        </tr>
+                            <tr>
+                                <td>14</td>
+                                <td>
+                                    <p><strong>Element location</strong></p>
+                                    <pre><code class="css text-wrap">#post-849 &gt; .entry-main &gt; .entry-content &gt; .more-link</code></pre>
+                                    <p><strong>Element source</strong></p>
+                                    <pre><code class="html text-wrap">&lt;a class="more-link" href="https://www.flexwind.com/user-experience/automation-falls-shorts-for-user-centric-testing/"&gt;Continue Reading&lt;span class="meta-nav"&gt;→&lt;/span&gt;&lt;/a&gt;</code></pre>
+                                </td>
+                                <td>
+                                    <div class="wrapBreakWord">
+                                        <p>Fix any of the following:</p>
+                                        <ul class="text-muted">
+                                            <li>  Element has insufficient color contrast of 2.54 (foreground color: #ffffff, background color: #49add7, font size: 8.3pt (11px), font weight: bold). Expected contrast ratio of 4.5:1</li>
+                                        </ul>
+                                    </div>
+                                    <p><strong>Related node:</strong></p>
+                                    <pre><code class="css text-wrap">#post-849 &gt; .entry-main &gt; .entry-content &gt; .more-link</code></pre>
+                                </td>
+                            
+          <td>
+            <a href="https://contrast-compass.vercel.app?fg=%23ffffff&amp;bg=%2349add7&amp;threshold=4.5:1&amp;url=https%3A%2F%2Fwww.flexwind.com%2Fblog&amp;selector=%23post-849%20%3E%20.entry-main%20%3E%20.entry-content%20%3E%20.more-link" title="fix now" target="contrast-compass"><img src="https://contrast-compass.vercel.app/assets/compass-companion-120x100.webp" height="50" width="60"></a>
+          </td>
+        </tr>
+                            <tr>
+                                <td>15</td>
+                                <td>
+                                    <p><strong>Element location</strong></p>
+                                    <pre><code class="css text-wrap">#post-842 &gt; .entry-main &gt; .entry-header &gt; .entry-meta</code></pre>
+                                    <p><strong>Element source</strong></p>
+                                    <pre><code class="html text-wrap">&lt;div class="entry-meta"&gt;</code></pre>
+                                </td>
+                                <td>
+                                    <div class="wrapBreakWord">
+                                        <p>Fix any of the following:</p>
+                                        <ul class="text-muted">
+                                            <li>  Element has insufficient color contrast of 3.15 (foreground color: #8f8f8f, background color: #fcfcfc, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1</li>
+                                        </ul>
+                                    </div>
+                                    <p><strong>Related node:</strong></p>
+                                    <pre><code class="css text-wrap">#main</code></pre>
+                                </td>
+                            
+          <td>
+            <a href="https://contrast-compass.vercel.app?fg=%238f8f8f&amp;bg=%23fcfcfc&amp;threshold=4.5:1&amp;url=https%3A%2F%2Fwww.flexwind.com%2Fblog&amp;selector=%23post-842%20%3E%20.entry-main%20%3E%20.entry-header%20%3E%20.entry-meta" title="fix now" target="contrast-compass"><img src="https://contrast-compass.vercel.app/assets/compass-companion-120x100.webp" height="50" width="60"></a>
+          </td>
+        </tr>
+                            <tr>
+                                <td>16</td>
+                                <td>
+                                    <p><strong>Element location</strong></p>
+                                    <pre><code class="css text-wrap">#post-842 &gt; .entry-main &gt; .entry-content &gt; .more-link</code></pre>
+                                    <p><strong>Element source</strong></p>
+                                    <pre><code class="html text-wrap">&lt;a class="more-link" href="https://www.flexwind.com/team/we-are-flexwind/"&gt;Continue Reading&lt;span class="meta-nav"&gt;→&lt;/span&gt;&lt;/a&gt;</code></pre>
+                                </td>
+                                <td>
+                                    <div class="wrapBreakWord">
+                                        <p>Fix any of the following:</p>
+                                        <ul class="text-muted">
+                                            <li>  Element has insufficient color contrast of 2.54 (foreground color: #ffffff, background color: #49add7, font size: 8.3pt (11px), font weight: bold). Expected contrast ratio of 4.5:1</li>
+                                        </ul>
+                                    </div>
+                                    <p><strong>Related node:</strong></p>
+                                    <pre><code class="css text-wrap">#post-842 &gt; .entry-main &gt; .entry-content &gt; .more-link</code></pre>
+                                </td>
+                            
+          <td>
+            <a href="https://contrast-compass.vercel.app?fg=%23ffffff&amp;bg=%2349add7&amp;threshold=4.5:1&amp;url=https%3A%2F%2Fwww.flexwind.com%2Fblog&amp;selector=%23post-842%20%3E%20.entry-main%20%3E%20.entry-content%20%3E%20.more-link" title="fix now" target="contrast-compass"><img src="https://contrast-compass.vercel.app/assets/compass-companion-120x100.webp" height="50" width="60"></a>
+          </td>
+        </tr>
+                            <tr>
+                                <td>17</td>
+                                <td>
+                                    <p><strong>Element location</strong></p>
+                                    <pre><code class="css text-wrap">#post-754 &gt; .entry-main &gt; .entry-header &gt; .entry-meta</code></pre>
+                                    <p><strong>Element source</strong></p>
+                                    <pre><code class="html text-wrap">&lt;div class="entry-meta"&gt;</code></pre>
+                                </td>
+                                <td>
+                                    <div class="wrapBreakWord">
+                                        <p>Fix any of the following:</p>
+                                        <ul class="text-muted">
+                                            <li>  Element has insufficient color contrast of 3.15 (foreground color: #8f8f8f, background color: #fcfcfc, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1</li>
+                                        </ul>
+                                    </div>
+                                    <p><strong>Related node:</strong></p>
+                                    <pre><code class="css text-wrap">#main</code></pre>
+                                </td>
+                            
+          <td>
+            <a href="https://contrast-compass.vercel.app?fg=%238f8f8f&amp;bg=%23fcfcfc&amp;threshold=4.5:1&amp;url=https%3A%2F%2Fwww.flexwind.com%2Fblog&amp;selector=%23post-754%20%3E%20.entry-main%20%3E%20.entry-header%20%3E%20.entry-meta" title="fix now" target="contrast-compass"><img src="https://contrast-compass.vercel.app/assets/compass-companion-120x100.webp" height="50" width="60"></a>
+          </td>
+        </tr>
+                            <tr>
+                                <td>18</td>
+                                <td>
+                                    <p><strong>Element location</strong></p>
+                                    <pre><code class="css text-wrap">#post-754 &gt; .entry-main &gt; .entry-content &gt; .more-link</code></pre>
+                                    <p><strong>Element source</strong></p>
+                                    <pre><code class="html text-wrap">&lt;a class="more-link" href="https://www.flexwind.com/user-experience/first-impression-of-ux/"&gt;Continue Reading&lt;span class="meta-nav"&gt;→&lt;/span&gt;&lt;/a&gt;</code></pre>
+                                </td>
+                                <td>
+                                    <div class="wrapBreakWord">
+                                        <p>Fix any of the following:</p>
+                                        <ul class="text-muted">
+                                            <li>  Element has insufficient color contrast of 2.54 (foreground color: #ffffff, background color: #49add7, font size: 8.3pt (11px), font weight: bold). Expected contrast ratio of 4.5:1</li>
+                                        </ul>
+                                    </div>
+                                    <p><strong>Related node:</strong></p>
+                                    <pre><code class="css text-wrap">#post-754 &gt; .entry-main &gt; .entry-content &gt; .more-link</code></pre>
+                                </td>
+                            
+          <td>
+            <a href="https://contrast-compass.vercel.app?fg=%23ffffff&amp;bg=%2349add7&amp;threshold=4.5:1&amp;url=https%3A%2F%2Fwww.flexwind.com%2Fblog&amp;selector=%23post-754%20%3E%20.entry-main%20%3E%20.entry-content%20%3E%20.more-link" title="fix now" target="contrast-compass"><img src="https://contrast-compass.vercel.app/assets/compass-companion-120x100.webp" height="50" width="60"></a>
+          </td>
+        </tr>
+                            <tr>
+                                <td>19</td>
+                                <td>
+                                    <p><strong>Element location</strong></p>
+                                    <pre><code class="css text-wrap">#post-657 &gt; .entry-main &gt; .entry-header &gt; .entry-meta</code></pre>
+                                    <p><strong>Element source</strong></p>
+                                    <pre><code class="html text-wrap">&lt;div class="entry-meta"&gt;</code></pre>
+                                </td>
+                                <td>
+                                    <div class="wrapBreakWord">
+                                        <p>Fix any of the following:</p>
+                                        <ul class="text-muted">
+                                            <li>  Element has insufficient color contrast of 3.15 (foreground color: #8f8f8f, background color: #fcfcfc, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1</li>
+                                        </ul>
+                                    </div>
+                                    <p><strong>Related node:</strong></p>
+                                    <pre><code class="css text-wrap">#main</code></pre>
+                                </td>
+                            
+          <td>
+            <a href="https://contrast-compass.vercel.app?fg=%238f8f8f&amp;bg=%23fcfcfc&amp;threshold=4.5:1&amp;url=https%3A%2F%2Fwww.flexwind.com%2Fblog&amp;selector=%23post-657%20%3E%20.entry-main%20%3E%20.entry-header%20%3E%20.entry-meta" title="fix now" target="contrast-compass"><img src="https://contrast-compass.vercel.app/assets/compass-companion-120x100.webp" height="50" width="60"></a>
+          </td>
+        </tr>
+                            <tr>
+                                <td>20</td>
+                                <td>
+                                    <p><strong>Element location</strong></p>
+                                    <pre><code class="css text-wrap">#post-657 &gt; .entry-main &gt; .entry-content &gt; .more-link</code></pre>
+                                    <p><strong>Element source</strong></p>
+                                    <pre><code class="html text-wrap">&lt;a class="more-link" href="https://www.flexwind.com/team/private-lorem-ipsum-dolor-sit-amet/"&gt;Continue Reading&lt;span class="meta-nav"&gt;→&lt;/span&gt;&lt;/a&gt;</code></pre>
+                                </td>
+                                <td>
+                                    <div class="wrapBreakWord">
+                                        <p>Fix any of the following:</p>
+                                        <ul class="text-muted">
+                                            <li>  Element has insufficient color contrast of 2.54 (foreground color: #ffffff, background color: #49add7, font size: 8.3pt (11px), font weight: bold). Expected contrast ratio of 4.5:1</li>
+                                        </ul>
+                                    </div>
+                                    <p><strong>Related node:</strong></p>
+                                    <pre><code class="css text-wrap">#post-657 &gt; .entry-main &gt; .entry-content &gt; .more-link</code></pre>
+                                </td>
+                            
+          <td>
+            <a href="https://contrast-compass.vercel.app?fg=%23ffffff&amp;bg=%2349add7&amp;threshold=4.5:1&amp;url=https%3A%2F%2Fwww.flexwind.com%2Fblog&amp;selector=%23post-657%20%3E%20.entry-main%20%3E%20.entry-content%20%3E%20.more-link" title="fix now" target="contrast-compass"><img src="https://contrast-compass.vercel.app/assets/compass-companion-120x100.webp" height="50" width="60"></a>
+          </td>
+        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="card violationCard">
+            <div class="card-body">
+                <div class="violationCardLine">
+                    <h5 class="card-title violationCardTitleItem">
+                        <a id="3">3.</a> Heading levels should only increase by one
+                    </h5>
+                    <a href="https://dequeuniversity.com/rules/axe/4.9/heading-order?application=playwright" target="_blank" class="card-link violationCardTitleItem learnMore">Learn
+                        more</a>
+                </div>
+                <div class="violationCardLine">
+                    <h6 class="card-subtitle mb-2 text-muted">heading-order</h6>
+                    <h6 class="card-subtitle mb-2 text-muted violationCardTitleItem">
+                        Best practice
+                    </h6>
+                </div>
+                <div class="violationCardLine">
+                    <p class="card-text">Ensures the order of headings is semantically correct</p>
+                    <h6 class="card-subtitle mb-2 text-muted violationCardTitleItem">
+                        moderate
+                    </h6>
+                </div>
+                <div class="violationCardLine">
+                    <h6 class="card-subtitle mb-2 text-muted violationCardTitleItem">
+                        Issue Tags: 
+                        <span class="badge bg-light text-dark"> cat.semantics </span>
+
+                        <span class="badge bg-light text-dark"> best-practice </span>
+                    </h6>
+                </div>
+                <div class="violationNode">
+                    <table class="table table-sm table-bordered">
+                        <thead>
+                            <tr>
+                                <th style="width: 2%">#</th>
+                                <th style="width: 49%">Issue Description</th>
+                                <th style="width: 49%">
+                                    To solve this violation, you need to...
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>
+                                    <p><strong>Element location</strong></p>
+                                    <pre><code class="css text-wrap">#recent-posts-2 &gt; h3</code></pre>
+                                    <p><strong>Element source</strong></p>
+                                    <pre><code class="html text-wrap">&lt;h3 class="widget-title"&gt;Recent Posts&lt;/h3&gt;</code></pre>
+                                </td>
+                                <td>
+                                    <div class="wrapBreakWord">
+                                        <p>Fix any of the following:</p>
+                                        <ul class="text-muted">
+                                            <li>  Heading order invalid</li>
+                                        </ul>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="card violationCard">
+            <div class="card-body">
+                <div class="violationCardLine">
+                    <h5 class="card-title violationCardTitleItem">
+                        <a id="4">4.</a> Aside should not be contained in another landmark
+                    </h5>
+                    <a href="https://dequeuniversity.com/rules/axe/4.9/landmark-complementary-is-top-level?application=playwright" target="_blank" class="card-link violationCardTitleItem learnMore">Learn
+                        more</a>
+                </div>
+                <div class="violationCardLine">
+                    <h6 class="card-subtitle mb-2 text-muted">landmark-complementary-is-top-level</h6>
+                    <h6 class="card-subtitle mb-2 text-muted violationCardTitleItem">
+                        Best practice
+                    </h6>
+                </div>
+                <div class="violationCardLine">
+                    <p class="card-text">Ensures the complementary landmark or aside is at top level</p>
+                    <h6 class="card-subtitle mb-2 text-muted violationCardTitleItem">
+                        moderate
+                    </h6>
+                </div>
+                <div class="violationCardLine">
+                    <h6 class="card-subtitle mb-2 text-muted violationCardTitleItem">
+                        Issue Tags: 
+                        <span class="badge bg-light text-dark"> cat.semantics </span>
+
+                        <span class="badge bg-light text-dark"> best-practice </span>
+                    </h6>
+                </div>
+                <div class="violationNode">
+                    <table class="table table-sm table-bordered">
+                        <thead>
+                            <tr>
+                                <th style="width: 2%">#</th>
+                                <th style="width: 49%">Issue Description</th>
+                                <th style="width: 49%">
+                                    To solve this violation, you need to...
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>
+                                    <p><strong>Element location</strong></p>
+                                    <pre><code class="css text-wrap">#recent-posts-2</code></pre>
+                                    <p><strong>Element source</strong></p>
+                                    <pre><code class="html text-wrap">&lt;aside id="recent-posts-2" class="widget widget_recent_entries"&gt;</code></pre>
+                                </td>
+                                <td>
+                                    <div class="wrapBreakWord">
+                                        <p>Fix any of the following:</p>
+                                        <ul class="text-muted">
+                                            <li>  The complementary landmark is contained in another landmark.</li>
+                                        </ul>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>
+                                    <p><strong>Element location</strong></p>
+                                    <pre><code class="css text-wrap">#media_image-3</code></pre>
+                                    <p><strong>Element source</strong></p>
+                                    <pre><code class="html text-wrap">&lt;aside id="media_image-3" class="  widget widget_media_image"&gt;</code></pre>
+                                </td>
+                                <td>
+                                    <div class="wrapBreakWord">
+                                        <p>Fix any of the following:</p>
+                                        <ul class="text-muted">
+                                            <li>  The complementary landmark is contained in another landmark.</li>
+                                        </ul>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>
+                                    <p><strong>Element location</strong></p>
+                                    <pre><code class="css text-wrap">#custom_html-10</code></pre>
+                                    <p><strong>Element source</strong></p>
+                                    <pre><code class="html text-wrap">&lt;aside id="custom_html-10" class="widget_text   widget widget_custom_html"&gt;&lt;div class="textwidget custom-html-widget"&gt;&lt;p&gt;&lt;strong&gt;Are you enthusiastic about what you do?Then we want to meet you!&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Apply online at the links below.&lt;/p&gt;&lt;/div&gt;&lt;/aside&gt;</code></pre>
+                                </td>
+                                <td>
+                                    <div class="wrapBreakWord">
+                                        <p>Fix any of the following:</p>
+                                        <ul class="text-muted">
+                                            <li>  The complementary landmark is contained in another landmark.</li>
+                                        </ul>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>
+                                    <p><strong>Element location</strong></p>
+                                    <pre><code class="css text-wrap">#simple_job_board_widgets_recent_jobs-4</code></pre>
+                                    <p><strong>Element source</strong></p>
+                                    <pre><code class="html text-wrap">&lt;aside id="simple_job_board_widgets_recent_jobs-4" class="  widget sjb-recent-jobs-widget"&gt;</code></pre>
+                                </td>
+                                <td>
+                                    <div class="wrapBreakWord">
+                                        <p>Fix any of the following:</p>
+                                        <ul class="text-muted">
+                                            <li>  The complementary landmark is contained in another landmark.</li>
+                                        </ul>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>
+                                    <p><strong>Element location</strong></p>
+                                    <pre><code class="css text-wrap">#vantage-social-media-3</code></pre>
+                                    <p><strong>Element source</strong></p>
+                                    <pre><code class="html text-wrap">&lt;aside id="vantage-social-media-3" class="  widget widget_vantage-social-media"&gt;</code></pre>
+                                </td>
+                                <td>
+                                    <div class="wrapBreakWord">
+                                        <p>Fix any of the following:</p>
+                                        <ul class="text-muted">
+                                            <li>  The complementary landmark is contained in another landmark.</li>
+                                        </ul>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>
+                                    <p><strong>Element location</strong></p>
+                                    <pre><code class="css text-wrap">#custom_html-9</code></pre>
+                                    <p><strong>Element source</strong></p>
+                                    <pre><code class="html text-wrap">&lt;aside id="custom_html-9" class="widget_text   widget widget_custom_html"&gt;&lt;div class="textwidget custom-html-widget"&gt;&amp;nbsp;&lt;/div&gt;&lt;/aside&gt;</code></pre>
+                                </td>
+                                <td>
+                                    <div class="wrapBreakWord">
+                                        <p>Fix any of the following:</p>
+                                        <ul class="text-muted">
+                                            <li>  The complementary landmark is contained in another landmark.</li>
+                                        </ul>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="card violationCard">
+            <div class="card-body">
+                <div class="violationCardLine">
+                    <h5 class="card-title violationCardTitleItem">
+                        <a id="5">5.</a> Ensures landmarks are unique
+                    </h5>
+                    <a href="https://dequeuniversity.com/rules/axe/4.9/landmark-unique?application=playwright" target="_blank" class="card-link violationCardTitleItem learnMore">Learn
+                        more</a>
+                </div>
+                <div class="violationCardLine">
+                    <h6 class="card-subtitle mb-2 text-muted">landmark-unique</h6>
+                    <h6 class="card-subtitle mb-2 text-muted violationCardTitleItem">
+                        Best practice
+                    </h6>
+                </div>
+                <div class="violationCardLine">
+                    <p class="card-text">Landmarks should have a unique role or role/label/title (i.e. accessible name) combination</p>
+                    <h6 class="card-subtitle mb-2 text-muted violationCardTitleItem">
+                        moderate
+                    </h6>
+                </div>
+                <div class="violationCardLine">
+                    <h6 class="card-subtitle mb-2 text-muted violationCardTitleItem">
+                        Issue Tags: 
+                        <span class="badge bg-light text-dark"> cat.semantics </span>
+
+                        <span class="badge bg-light text-dark"> best-practice </span>
+                    </h6>
+                </div>
+                <div class="violationNode">
+                    <table class="table table-sm table-bordered">
+                        <thead>
+                            <tr>
+                                <th style="width: 2%">#</th>
+                                <th style="width: 49%">Issue Description</th>
+                                <th style="width: 49%">
+                                    To solve this violation, you need to...
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>
+                                    <p><strong>Element location</strong></p>
+                                    <pre><code class="css text-wrap">#secondary</code></pre>
+                                    <p><strong>Element source</strong></p>
+                                    <pre><code class="html text-wrap">&lt;div id="secondary" class="widget-area" role="complementary"&gt;</code></pre>
+                                </td>
+                                <td>
+                                    <div class="wrapBreakWord">
+                                        <p>Fix any of the following:</p>
+                                        <ul class="text-muted">
+                                            <li>  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable</li>
+                                        </ul>
+                                    </div>
+                                    <p><strong>Related node:</strong></p>
+                                    <pre><code class="css text-wrap">#recent-posts-2</code></pre>
+                                    <pre><code class="css text-wrap">#media_image-3</code></pre>
+                                    <pre><code class="css text-wrap">#custom_html-10</code></pre>
+                                    <pre><code class="css text-wrap">#simple_job_board_widgets_recent_jobs-4</code></pre>
+                                    <pre><code class="css text-wrap">#vantage-social-media-3</code></pre>
+                                    <pre><code class="css text-wrap">#custom_html-9</code></pre>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="card violationCard">
+            <div class="card-body">
+                <div class="violationCardLine">
+                    <h5 class="card-title violationCardTitleItem">
+                        <a id="6">6.</a> Links must have discernible text
+                    </h5>
+                    <a href="https://dequeuniversity.com/rules/axe/4.9/link-name?application=playwright" target="_blank" class="card-link violationCardTitleItem learnMore">Learn
+                        more</a>
+                </div>
+                <div class="violationCardLine">
+                    <h6 class="card-subtitle mb-2 text-muted">link-name</h6>
+                    <h6 class="card-subtitle mb-2 text-muted violationCardTitleItem">
+                        WCAG 2 Level A, WCAG 2.4.4, WCAG 4.1.2
+                    </h6>
+                </div>
+                <div class="violationCardLine">
+                    <p class="card-text">Ensures links have discernible text</p>
+                    <h6 class="card-subtitle mb-2 text-muted violationCardTitleItem">
+                        serious
+                    </h6>
+                </div>
+                <div class="violationCardLine">
+                    <h6 class="card-subtitle mb-2 text-muted violationCardTitleItem">
+                        Issue Tags: 
+                        <span class="badge bg-light text-dark"> cat.name-role-value </span>
+
+                        <span class="badge bg-light text-dark"> wcag2a </span>
+
+                        <span class="badge bg-light text-dark"> wcag244 </span>
+
+                        <span class="badge bg-light text-dark"> wcag412 </span>
+
+                        <span class="badge bg-light text-dark"> section508 </span>
+
+                        <span class="badge bg-light text-dark"> section508.22.a </span>
+
+                        <span class="badge bg-light text-dark"> TTv5 </span>
+
+                        <span class="badge bg-light text-dark"> TT6.a </span>
+
+                        <span class="badge bg-light text-dark"> EN-301-549 </span>
+
+                        <span class="badge bg-light text-dark"> EN-9.2.4.4 </span>
+
+                        <span class="badge bg-light text-dark"> EN-9.4.1.2 </span>
+
+                        <span class="badge bg-light text-dark"> ACT </span>
+                    </h6>
+                </div>
+                <div class="violationNode">
+                    <table class="table table-sm table-bordered">
+                        <thead>
+                            <tr>
+                                <th style="width: 2%">#</th>
+                                <th style="width: 49%">Issue Description</th>
+                                <th style="width: 49%">
+                                    To solve this violation, you need to...
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>
+                                    <p><strong>Element location</strong></p>
+                                    <pre><code class="css text-wrap">#post-842 &gt; .entry-main &gt; .entry-header &gt; .entry-thumbnail &gt; a</code></pre>
+                                    <p><strong>Element source</strong></p>
+                                    <pre><code class="html text-wrap">&lt;a href="https://www.flexwind.com/team/we-are-flexwind/"&gt;&lt;img width="720" height="380" src="https://www.flexwind.com/wp-content/uploads/2020/07/Screenshot-2020-07-31-15.12.39-720x380.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" decoding="async" loading="lazy"&gt;&lt;/a&gt;</code></pre>
+                                </td>
+                                <td>
+                                    <div class="wrapBreakWord">
+                                        <p>Fix all of the following:</p>
+                                        <ul class="text-muted">
+                                            <li>  Element is in tab order and does not have accessible text</li>
+                                        </ul>
+                                    </div>
+                                    <div class="wrapBreakWord">
+                                        <p>Fix any of the following:</p>
+                                        <ul class="text-muted">
+                                            <li>  Element does not have text that is visible to screen readers</li>
+                                            <li>  aria-label attribute does not exist or is empty</li>
+                                            <li>  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty</li>
+                                            <li>  Element has no title attribute</li>
+                                        </ul>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>
+                                    <p><strong>Element location</strong></p>
+                                    <pre><code class="css text-wrap">#post-754 &gt; .entry-main &gt; .entry-header &gt; .entry-thumbnail &gt; a</code></pre>
+                                    <p><strong>Element source</strong></p>
+                                    <pre><code class="html text-wrap">&lt;a href="https://www.flexwind.com/user-experience/first-impression-of-ux/"&gt;</code></pre>
+                                </td>
+                                <td>
+                                    <div class="wrapBreakWord">
+                                        <p>Fix all of the following:</p>
+                                        <ul class="text-muted">
+                                            <li>  Element is in tab order and does not have accessible text</li>
+                                        </ul>
+                                    </div>
+                                    <div class="wrapBreakWord">
+                                        <p>Fix any of the following:</p>
+                                        <ul class="text-muted">
+                                            <li>  Element does not have text that is visible to screen readers</li>
+                                            <li>  aria-label attribute does not exist or is empty</li>
+                                            <li>  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty</li>
+                                            <li>  Element has no title attribute</li>
+                                        </ul>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>
+                                    <p><strong>Element location</strong></p>
+                                    <pre><code class="css text-wrap">#post-657 &gt; .entry-main &gt; .entry-header &gt; .entry-thumbnail &gt; a</code></pre>
+                                    <p><strong>Element source</strong></p>
+                                    <pre><code class="html text-wrap">&lt;a href="https://www.flexwind.com/team/private-lorem-ipsum-dolor-sit-amet/"&gt;</code></pre>
+                                </td>
+                                <td>
+                                    <div class="wrapBreakWord">
+                                        <p>Fix all of the following:</p>
+                                        <ul class="text-muted">
+                                            <li>  Element is in tab order and does not have accessible text</li>
+                                        </ul>
+                                    </div>
+                                    <div class="wrapBreakWord">
+                                        <p>Fix any of the following:</p>
+                                        <ul class="text-muted">
+                                            <li>  Element does not have text that is visible to screen readers</li>
+                                            <li>  aria-label attribute does not exist or is empty</li>
+                                            <li>  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty</li>
+                                            <li>  Element has no title attribute</li>
+                                        </ul>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div id="accordionPasses">
+            <div class="card">
+                <div class="card-header" id="headingOne">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link" data-toggle="collapse" data-target="#passes" aria-expanded="false" aria-controls="passes">
+                            axe returned 44 passed axe
+                            checks. Expand details on
+                            click
+                        </button>
+                    </h5>
+                </div>
+                <div id="passes" class="collapse" aria-labelledby="headingOne" data-parent="#accordionPasses">
+                    <div class="card-body">
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th style="width: 5%">#</th>
+                                    <th style="width: 40%">Description</th>
+                                    <th style="width: 5%">Axe rule ID</th>
+                                    <th style="width: 15%">WCAG</th>
+                                    <th style="width: 5%">Nodes passed check</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>Elements must only use supported ARIA attributes</td>
+                                    <td>aria-allowed-attr</td>
+                                    <td>WCAG 2 Level A, WCAG 4.1.2</td>
+                                    <td>1</td>
+                                </tr>
+                            </tbody>
+                                <tbody><tr>
+                                    <th scope="row">2</th>
+                                    <td>ARIA role should be appropriate for the element</td>
+                                    <td>aria-allowed-role</td>
+                                    <td>Best practice</td>
+                                    <td>5</td>
+                                </tr>
+                            </tbody>
+                                <tbody><tr>
+                                    <th scope="row">3</th>
+                                    <td>ARIA attributes must be used as specified for the element's role</td>
+                                    <td>aria-conditional-attr</td>
+                                    <td>WCAG 2 Level A, WCAG 4.1.2</td>
+                                    <td>1</td>
+                                </tr>
+                            </tbody>
+                                <tbody><tr>
+                                    <th scope="row">4</th>
+                                    <td>Deprecated ARIA roles must not be used</td>
+                                    <td>aria-deprecated-role</td>
+                                    <td>WCAG 2 Level A, WCAG 4.1.2</td>
+                                    <td>5</td>
+                                </tr>
+                            </tbody>
+                                <tbody><tr>
+                                    <th scope="row">5</th>
+                                    <td>aria-hidden="true" must not be present on the document body</td>
+                                    <td>aria-hidden-body</td>
+                                    <td>WCAG 2 Level A, WCAG 1.3.1, WCAG 4.1.2</td>
+                                    <td>1</td>
+                                </tr>
+                            </tbody>
+                                <tbody><tr>
+                                    <th scope="row">6</th>
+                                    <td>Elements must only use permitted ARIA attributes</td>
+                                    <td>aria-prohibited-attr</td>
+                                    <td>WCAG 2 Level A, WCAG 4.1.2</td>
+                                    <td>1</td>
+                                </tr>
+                            </tbody>
+                                <tbody><tr>
+                                    <th scope="row">7</th>
+                                    <td>Required ARIA attributes must be provided</td>
+                                    <td>aria-required-attr</td>
+                                    <td>WCAG 2 Level A, WCAG 4.1.2</td>
+                                    <td>5</td>
+                                </tr>
+                            </tbody>
+                                <tbody><tr>
+                                    <th scope="row">8</th>
+                                    <td>ARIA roles used must conform to valid values</td>
+                                    <td>aria-roles</td>
+                                    <td>WCAG 2 Level A, WCAG 4.1.2</td>
+                                    <td>5</td>
+                                </tr>
+                            </tbody>
+                                <tbody><tr>
+                                    <th scope="row">9</th>
+                                    <td>ARIA attributes must conform to valid values</td>
+                                    <td>aria-valid-attr-value</td>
+                                    <td>WCAG 2 Level A, WCAG 4.1.2</td>
+                                    <td>1</td>
+                                </tr>
+                            </tbody>
+                                <tbody><tr>
+                                    <th scope="row">10</th>
+                                    <td>ARIA attributes must conform to valid names</td>
+                                    <td>aria-valid-attr</td>
+                                    <td>WCAG 2 Level A, WCAG 4.1.2</td>
+                                    <td>1</td>
+                                </tr>
+                            </tbody>
+                                <tbody><tr>
+                                    <th scope="row">11</th>
+                                    <td>Inline text spacing must be adjustable with custom stylesheets</td>
+                                    <td>avoid-inline-spacing</td>
+                                    <td>WCAG 2.1 Level AA, WCAG 1.4.1.2</td>
+                                    <td>2</td>
+                                </tr>
+                            </tbody>
+                                <tbody><tr>
+                                    <th scope="row">12</th>
+                                    <td>Page must have means to bypass repeated blocks</td>
+                                    <td>bypass</td>
+                                    <td>WCAG 2 Level A, WCAG 2.4.1</td>
+                                    <td>1</td>
+                                </tr>
+                            </tbody>
+                                <tbody><tr>
+                                    <th scope="row">13</th>
+                                    <td>Elements must meet enhanced color contrast ratio thresholds</td>
+                                    <td>color-contrast-enhanced</td>
+                                    <td>WCAG 2 Level AAA, WCAG 1.4.6</td>
+                                    <td>47</td>
+                                </tr>
+                            </tbody>
+                                <tbody><tr>
+                                    <th scope="row">14</th>
+                                    <td>Elements must meet minimum color contrast ratio thresholds</td>
+                                    <td>color-contrast</td>
+                                    <td>WCAG 2 Level AA, WCAG 1.4.3</td>
+                                    <td>63</td>
+                                </tr>
+                            </tbody>
+                                <tbody><tr>
+                                    <th scope="row">15</th>
+                                    <td>Documents must have &lt;title&gt; element to aid in navigation</td>
+                                    <td>document-title</td>
+                                    <td>WCAG 2 Level A, WCAG 2.4.2</td>
+                                    <td>1</td>
+                                </tr>
+                            </tbody>
+                                <tbody><tr>
+                                    <th scope="row">16</th>
+                                    <td>Headings should not be empty</td>
+                                    <td>empty-heading</td>
+                                    <td>Best practice</td>
+                                    <td>13</td>
+                                </tr>
+                            </tbody>
+                                <tbody><tr>
+                                    <th scope="row">17</th>
+                                    <td>Heading levels should only increase by one</td>
+                                    <td>heading-order</td>
+                                    <td>Best practice</td>
+                                    <td>12</td>
+                                </tr>
+                            </tbody>
+                                <tbody><tr>
+                                    <th scope="row">18</th>
+                                    <td>&lt;html&gt; element must have a lang attribute</td>
+                                    <td>html-has-lang</td>
+                                    <td>WCAG 2 Level A, WCAG 3.1.1</td>
+                                    <td>1</td>
+                                </tr>
+                            </tbody>
+                                <tbody><tr>
+                                    <th scope="row">19</th>
+                                    <td>&lt;html&gt; element must have a valid value for the lang attribute</td>
+                                    <td>html-lang-valid</td>
+                                    <td>WCAG 2 Level A, WCAG 3.1.1</td>
+                                    <td>1</td>
+                                </tr>
+                            </tbody>
+                                <tbody><tr>
+                                    <th scope="row">20</th>
+                                    <td>Links with the same name must have a similar purpose</td>
+                                    <td>identical-links-same-purpose</td>
+                                    <td>WCAG 2 Level AAA, WCAG 2.4.9</td>
+                                    <td>48</td>
+                                </tr>
+                            </tbody>
+                                <tbody><tr>
+                                    <th scope="row">21</th>
+                                    <td>Images must have alternate text</td>
+                                    <td>image-alt</td>
+                                    <td>WCAG 2 Level A, WCAG 1.1.1</td>
+                                    <td>12</td>
+                                </tr>
+                            </tbody>
+                                <tbody><tr>
+                                    <th scope="row">22</th>
+                                    <td>Alternative text of images should not be repeated as text</td>
+                                    <td>image-redundant-alt</td>
+                                    <td>Best practice</td>
+                                    <td>12</td>
+                                </tr>
+                            </tbody>
+                                <tbody><tr>
+                                    <th scope="row">23</th>
+                                    <td>Banner landmark should not be contained in another landmark</td>
+                                    <td>landmark-banner-is-top-level</td>
+                                    <td>Best practice</td>
+                                    <td>1</td>
+                                </tr>
+                            </tbody>
+                                <tbody><tr>
+                                    <th scope="row">24</th>
+                                    <td>Aside should not be contained in another landmark</td>
+                                    <td>landmark-complementary-is-top-level</td>
+                                    <td>Best practice</td>
+                                    <td>1</td>
+                                </tr>
+                            </tbody>
+                                <tbody><tr>
+                                    <th scope="row">25</th>
+                                    <td>Contentinfo landmark should not be contained in another landmark</td>
+                                    <td>landmark-contentinfo-is-top-level</td>
+                                    <td>Best practice</td>
+                                    <td>1</td>
+                                </tr>
+                            </tbody>
+                                <tbody><tr>
+                                    <th scope="row">26</th>
+                                    <td>Main landmark should not be contained in another landmark</td>
+                                    <td>landmark-main-is-top-level</td>
+                                    <td>Best practice</td>
+                                    <td>1</td>
+                                </tr>
+                            </tbody>
+                                <tbody><tr>
+                                    <th scope="row">27</th>
+                                    <td>Document should not have more than one banner landmark</td>
+                                    <td>landmark-no-duplicate-banner</td>
+                                    <td>Best practice</td>
+                                    <td>1</td>
+                                </tr>
+                            </tbody>
+                                <tbody><tr>
+                                    <th scope="row">28</th>
+                                    <td>Document should not have more than one contentinfo landmark</td>
+                                    <td>landmark-no-duplicate-contentinfo</td>
+                                    <td>Best practice</td>
+                                    <td>1</td>
+                                </tr>
+                            </tbody>
+                                <tbody><tr>
+                                    <th scope="row">29</th>
+                                    <td>Document should not have more than one main landmark</td>
+                                    <td>landmark-no-duplicate-main</td>
+                                    <td>Best practice</td>
+                                    <td>1</td>
+                                </tr>
+                            </tbody>
+                                <tbody><tr>
+                                    <th scope="row">30</th>
+                                    <td>Document should have one main landmark</td>
+                                    <td>landmark-one-main</td>
+                                    <td>Best practice</td>
+                                    <td>1</td>
+                                </tr>
+                            </tbody>
+                                <tbody><tr>
+                                    <th scope="row">31</th>
+                                    <td>Ensures landmarks are unique</td>
+                                    <td>landmark-unique</td>
+                                    <td>Best practice</td>
+                                    <td>4</td>
+                                </tr>
+                            </tbody>
+                                <tbody><tr>
+                                    <th scope="row">32</th>
+                                    <td>Links must be distinguishable without relying on color</td>
+                                    <td>link-in-text-block</td>
+                                    <td>WCAG 2 Level A, WCAG 1.4.1</td>
+                                    <td>10</td>
+                                </tr>
+                            </tbody>
+                                <tbody><tr>
+                                    <th scope="row">33</th>
+                                    <td>Links must have discernible text</td>
+                                    <td>link-name</td>
+                                    <td>WCAG 2 Level A, WCAG 2.4.4, WCAG 4.1.2</td>
+                                    <td>63</td>
+                                </tr>
+                            </tbody>
+                                <tbody><tr>
+                                    <th scope="row">34</th>
+                                    <td>&lt;ul&gt; and &lt;ol&gt; must only directly contain &lt;li&gt;, &lt;script&gt; or &lt;template&gt; elements</td>
+                                    <td>list</td>
+                                    <td>WCAG 2 Level A, WCAG 1.3.1</td>
+                                    <td>3</td>
+                                </tr>
+                            </tbody>
+                                <tbody><tr>
+                                    <th scope="row">35</th>
+                                    <td>&lt;li&gt; elements must be contained in a &lt;ul&gt; or &lt;ol&gt;</td>
+                                    <td>listitem</td>
+                                    <td>WCAG 2 Level A, WCAG 1.3.1</td>
+                                    <td>19</td>
+                                </tr>
+                            </tbody>
+                                <tbody><tr>
+                                    <th scope="row">36</th>
+                                    <td>Users should be able to zoom and scale the text up to 500%</td>
+                                    <td>meta-viewport-large</td>
+                                    <td>Best practice</td>
+                                    <td>1</td>
+                                </tr>
+                            </tbody>
+                                <tbody><tr>
+                                    <th scope="row">37</th>
+                                    <td>Zooming and scaling must not be disabled</td>
+                                    <td>meta-viewport</td>
+                                    <td>WCAG 2 Level AA, WCAG 1.4.4</td>
+                                    <td>1</td>
+                                </tr>
+                            </tbody>
+                                <tbody><tr>
+                                    <th scope="row">38</th>
+                                    <td>Interactive controls must not be nested</td>
+                                    <td>nested-interactive</td>
+                                    <td>WCAG 2 Level A, WCAG 4.1.2</td>
+                                    <td>8</td>
+                                </tr>
+                            </tbody>
+                                <tbody><tr>
+                                    <th scope="row">39</th>
+                                    <td>Page should contain a level-one heading</td>
+                                    <td>page-has-heading-one</td>
+                                    <td>Best practice</td>
+                                    <td>1</td>
+                                </tr>
+                            </tbody>
+                                <tbody><tr>
+                                    <th scope="row">40</th>
+                                    <td>Ensure elements marked as presentational are consistently ignored</td>
+                                    <td>presentation-role-conflict</td>
+                                    <td>Best practice</td>
+                                    <td>4</td>
+                                </tr>
+                            </tbody>
+                                <tbody><tr>
+                                    <th scope="row">41</th>
+                                    <td>All page content should be contained by landmarks</td>
+                                    <td>region</td>
+                                    <td>Best practice</td>
+                                    <td>244</td>
+                                </tr>
+                            </tbody>
+                                <tbody><tr>
+                                    <th scope="row">42</th>
+                                    <td>Scrollable region must have keyboard access</td>
+                                    <td>scrollable-region-focusable</td>
+                                    <td>WCAG 2 Level A, WCAG 2.1.1, WCAG 2.1.3</td>
+                                    <td>1</td>
+                                </tr>
+                            </tbody>
+                                <tbody><tr>
+                                    <th scope="row">43</th>
+                                    <td>The skip-link target should exist and be focusable</td>
+                                    <td>skip-link</td>
+                                    <td>Best practice</td>
+                                    <td>1</td>
+                                </tr>
+                            </tbody>
+                                <tbody><tr>
+                                    <th scope="row">44</th>
+                                    <td>All touch targets must be 24px large, or leave sufficient space</td>
+                                    <td>target-size</td>
+                                    <td>WCAG 2.2 Level AA, WCAG 2.5.8</td>
+                                    <td>47</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="accordionIncomplete">
+            <div class="card">
+                <div class="card-header" id="headingTwo">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link" data-toggle="collapse" data-target="#incomplete" aria-expanded="false" aria-controls="incomplete">
+                            axe returned 2 incomplete checks. Expand
+                            details on click
+                        </button>
+                    </h5>
+                </div>
+                <div id="incomplete" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionIncomplete">
+                    <div class="card-body">
+                        <p><em>What 'incomplete' axe checks means?</em></p>
+                        <p>
+                            Incomplete results were aborted and require further testing. This
+                            can happen either because of technical restrictions to what the rule
+                            can test, or because a javascript error occurred.
+                        </p>
+                        <p>
+                            <a href="https://www.deque.com/axe/core-documentation/api-documentation/#results-object">Visit
+                                axe API Documentation</a>
+                            to learn more.
+                        </p>
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th style="width: 5%">#</th>
+                                    <th style="width: 50%">Description</th>
+                                    <th style="width: 20%">Axe rule ID</th>
+                                    <th style="width: 15%">WCAG</th>
+                                    <th style="width: 10%">Nodes with incomplete check</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>Links with the same name must have a similar purpose</td>
+                                    <td>identical-links-same-purpose</td>
+                                    <td>WCAG 2 Level AAA, WCAG 2.4.9</td>
+                                    <td>1</td>
+                                </tr>
+                            </tbody>
+                                <tbody><tr>
+                                    <th scope="row">2</th>
+                                    <td>Links must be distinguishable without relying on color</td>
+                                    <td>link-in-text-block</td>
+                                    <td>WCAG 2 Level A, WCAG 1.4.1</td>
+                                    <td>2</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="accordionInapplicable">
+            <div class="card">
+                <div class="card-header" id="headingThree">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link" data-toggle="collapse" data-target="#inapplicable" aria-expanded="false" aria-controls="inapplicable">
+                            axe returned 50 inapplicable checks.
+                            Expand details on click
+                        </button>
+                    </h5>
+                </div>
+                <div id="inapplicable" class="collapse" aria-labelledby="headingThree" data-parent="#accordionInapplicable">
+                    <div class="card-body">
+                        <p><em>What 'inapplicable' axe checks means?</em></p>
+                        <p>
+                            The inapplicable array lists all the rules for which no matching
+                            elements were found on the page.
+                        </p>
+                        <p>
+                            <a href="https://www.deque.com/axe/core-documentation/api-documentation/#results-object">Visit
+                                axe API Documentation</a>
+                            to learn more.
+                        </p>
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th style="width: 5%">#</th>
+                                    <th style="width: 50%">Description</th>
+                                    <th style="width: 20%">Axe rule ID</th>
+                                    <th style="width: 15%">WCAG</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>accesskey attribute value should be unique</td>
+                                    <td>accesskeys</td>
+                                    <td>Best practice</td>
+                                </tr>
+                            </tbody>
+                                <tbody><tr>
+                                    <th scope="row">2</th>
+                                    <td>Active &lt;area&gt; elements must have alternate text</td>
+                                    <td>area-alt</td>
+                                    <td>WCAG 2 Level A, WCAG 2.4.4, WCAG 4.1.2</td>
+                                </tr>
+                            </tbody>
+                                <tbody><tr>
+                                    <th scope="row">3</th>
+                                    <td>aria-braille attributes must have a non-braille equivalent</td>
+                                    <td>aria-braille-equivalent</td>
+                                    <td>WCAG 2 Level A, WCAG 4.1.2</td>
+                                </tr>
+                            </tbody>
+                                <tbody><tr>
+                                    <th scope="row">4</th>
+                                    <td>ARIA commands must have an accessible name</td>
+                                    <td>aria-command-name</td>
+                                    <td>WCAG 2 Level A, WCAG 4.1.2</td>
+                                </tr>
+                            </tbody>
+                                <tbody><tr>
+                                    <th scope="row">5</th>
+                                    <td>ARIA dialog and alertdialog nodes should have an accessible name</td>
+                                    <td>aria-dialog-name</td>
+                                    <td>Best practice</td>
+                                </tr>
+                            </tbody>
+                                <tbody><tr>
+                                    <th scope="row">6</th>
+                                    <td>ARIA hidden element must not be focusable or contain focusable elements</td>
+                                    <td>aria-hidden-focus</td>
+                                    <td>WCAG 2 Level A, WCAG 4.1.2</td>
+                                </tr>
+                            </tbody>
+                                <tbody><tr>
+                                    <th scope="row">7</th>
+                                    <td>ARIA input fields must have an accessible name</td>
+                                    <td>aria-input-field-name</td>
+                                    <td>WCAG 2 Level A, WCAG 4.1.2</td>
+                                </tr>
+                            </tbody>
+                                <tbody><tr>
+                                    <th scope="row">8</th>
+                                    <td>ARIA meter nodes must have an accessible name</td>
+                                    <td>aria-meter-name</td>
+                                    <td>WCAG 2 Level A, WCAG 1.1.1</td>
+                                </tr>
+                            </tbody>
+                                <tbody><tr>
+                                    <th scope="row">9</th>
+                                    <td>ARIA progressbar nodes must have an accessible name</td>
+                                    <td>aria-progressbar-name</td>
+                                    <td>WCAG 2 Level A, WCAG 1.1.1</td>
+                                </tr>
+                            </tbody>
+                                <tbody><tr>
+                                    <th scope="row">10</th>
+                                    <td>Certain ARIA roles must contain particular children</td>
+                                    <td>aria-required-children</td>
+                                    <td>WCAG 2 Level A, WCAG 1.3.1</td>
+                                </tr>
+                            </tbody>
+                                <tbody><tr>
+                                    <th scope="row">11</th>
+                                    <td>Certain ARIA roles must be contained by particular parents</td>
+                                    <td>aria-required-parent</td>
+                                    <td>WCAG 2 Level A, WCAG 1.3.1</td>
+                                </tr>
+                            </tbody>
+                                <tbody><tr>
+                                    <th scope="row">12</th>
+                                    <td>aria-roledescription must be on elements with a semantic role</td>
+                                    <td>aria-roledescription</td>
+                                    <td>WCAG 2 Level A, WCAG 4.1.2</td>
+                                </tr>
+                            </tbody>
+                                <tbody><tr>
+                                    <th scope="row">13</th>
+                                    <td>"role=text" should have no focusable descendants</td>
+                                    <td>aria-text</td>
+                                    <td>Best practice</td>
+                                </tr>
+                            </tbody>
+                                <tbody><tr>
+                                    <th scope="row">14</th>
+                                    <td>ARIA toggle fields must have an accessible name</td>
+                                    <td>aria-toggle-field-name</td>
+                                    <td>WCAG 2 Level A, WCAG 4.1.2</td>
+                                </tr>
+                            </tbody>
+                                <tbody><tr>
+                                    <th scope="row">15</th>
+                                    <td>ARIA tooltip nodes must have an accessible name</td>
+                                    <td>aria-tooltip-name</td>
+                                    <td>WCAG 2 Level A, WCAG 4.1.2</td>
+                                </tr>
+                            </tbody>
+                                <tbody><tr>
+                                    <th scope="row">16</th>
+                                    <td>ARIA treeitem nodes should have an accessible name</td>
+                                    <td>aria-treeitem-name</td>
+                                    <td>Best practice</td>
+                                </tr>
+                            </tbody>
+                                <tbody><tr>
+                                    <th scope="row">17</th>
+                                    <td>&lt;audio&gt; elements must have a captions track</td>
+                                    <td>audio-caption</td>
+                                    <td>WCAG 2 Level A, WCAG 1.2.1</td>
+                                </tr>
+                            </tbody>
+                                <tbody><tr>
+                                    <th scope="row">18</th>
+                                    <td>autocomplete attribute must be used correctly</td>
+                                    <td>autocomplete-valid</td>
+                                    <td>WCAG 2.1 Level AA, WCAG 1.3.5</td>
+                                </tr>
+                            </tbody>
+                                <tbody><tr>
+                                    <th scope="row">19</th>
+                                    <td>&lt;blink&gt; elements are deprecated and must not be used</td>
+                                    <td>blink</td>
+                                    <td>WCAG 2 Level A, WCAG 2.2.2</td>
+                                </tr>
+                            </tbody>
+                                <tbody><tr>
+                                    <th scope="row">20</th>
+                                    <td>Buttons must have discernible text</td>
+                                    <td>button-name</td>
+                                    <td>WCAG 2 Level A, WCAG 4.1.2</td>
+                                </tr>
+                            </tbody>
+                                <tbody><tr>
+                                    <th scope="row">21</th>
+                                    <td>&lt;dl&gt; elements must only directly contain properly-ordered &lt;dt&gt; and &lt;dd&gt; groups, &lt;script&gt;, &lt;template&gt; or &lt;div&gt; elements</td>
+                                    <td>definition-list</td>
+                                    <td>WCAG 2 Level A, WCAG 1.3.1</td>
+                                </tr>
+                            </tbody>
+                                <tbody><tr>
+                                    <th scope="row">22</th>
+                                    <td>&lt;dt&gt; and &lt;dd&gt; elements must be contained by a &lt;dl&gt;</td>
+                                    <td>dlitem</td>
+                                    <td>WCAG 2 Level A, WCAG 1.3.1</td>
+                                </tr>
+                            </tbody>
+                                <tbody><tr>
+                                    <th scope="row">23</th>
+                                    <td>IDs used in ARIA and labels must be unique</td>
+                                    <td>duplicate-id-aria</td>
+                                    <td>WCAG 2 Level A, WCAG 4.1.2</td>
+                                </tr>
+                            </tbody>
+                                <tbody><tr>
+                                    <th scope="row">24</th>
+                                    <td>Table header text should not be empty</td>
+                                    <td>empty-table-header</td>
+                                    <td>Best practice</td>
+                                </tr>
+                            </tbody>
+                                <tbody><tr>
+                                    <th scope="row">25</th>
+                                    <td>Form field must not have multiple label elements</td>
+                                    <td>form-field-multiple-labels</td>
+                                    <td>WCAG 2 Level A, WCAG 3.3.2</td>
+                                </tr>
+                            </tbody>
+                                <tbody><tr>
+                                    <th scope="row">26</th>
+                                    <td>Frames with focusable content must not have tabindex=-1</td>
+                                    <td>frame-focusable-content</td>
+                                    <td>WCAG 2 Level A, WCAG 2.1.1</td>
+                                </tr>
+                            </tbody>
+                                <tbody><tr>
+                                    <th scope="row">27</th>
+                                    <td>Frames should be tested with axe-core</td>
+                                    <td>frame-tested</td>
+                                    <td>Best practice</td>
+                                </tr>
+                            </tbody>
+                                <tbody><tr>
+                                    <th scope="row">28</th>
+                                    <td>Frames must have a unique title attribute</td>
+                                    <td>frame-title-unique</td>
+                                    <td>WCAG 2 Level A, WCAG 4.1.2</td>
+                                </tr>
+                            </tbody>
+                                <tbody><tr>
+                                    <th scope="row">29</th>
+                                    <td>Frames must have an accessible name</td>
+                                    <td>frame-title</td>
+                                    <td>WCAG 2 Level A, WCAG 4.1.2</td>
+                                </tr>
+                            </tbody>
+                                <tbody><tr>
+                                    <th scope="row">30</th>
+                                    <td>HTML elements with lang and xml:lang must have the same base language</td>
+                                    <td>html-xml-lang-mismatch</td>
+                                    <td>WCAG 2 Level A, WCAG 3.1.1</td>
+                                </tr>
+                            </tbody>
+                                <tbody><tr>
+                                    <th scope="row">31</th>
+                                    <td>Input buttons must have discernible text</td>
+                                    <td>input-button-name</td>
+                                    <td>WCAG 2 Level A, WCAG 4.1.2</td>
+                                </tr>
+                            </tbody>
+                                <tbody><tr>
+                                    <th scope="row">32</th>
+                                    <td>Image buttons must have alternate text</td>
+                                    <td>input-image-alt</td>
+                                    <td>WCAG 2 Level A, WCAG 1.1.1, WCAG 4.1.2</td>
+                                </tr>
+                            </tbody>
+                                <tbody><tr>
+                                    <th scope="row">33</th>
+                                    <td>Form elements should have a visible label</td>
+                                    <td>label-title-only</td>
+                                    <td>Best practice</td>
+                                </tr>
+                            </tbody>
+                                <tbody><tr>
+                                    <th scope="row">34</th>
+                                    <td>Form elements must have labels</td>
+                                    <td>label</td>
+                                    <td>WCAG 2 Level A, WCAG 4.1.2</td>
+                                </tr>
+                            </tbody>
+                                <tbody><tr>
+                                    <th scope="row">35</th>
+                                    <td>&lt;marquee&gt; elements are deprecated and must not be used</td>
+                                    <td>marquee</td>
+                                    <td>WCAG 2 Level A, WCAG 2.2.2</td>
+                                </tr>
+                            </tbody>
+                                <tbody><tr>
+                                    <th scope="row">36</th>
+                                    <td>Delayed refresh must not be used</td>
+                                    <td>meta-refresh-no-exceptions</td>
+                                    <td>WCAG 2 Level AAA, WCAG 2.2.4, WCAG 3.2.5</td>
+                                </tr>
+                            </tbody>
+                                <tbody><tr>
+                                    <th scope="row">37</th>
+                                    <td>Delayed refresh under 20 hours must not be used</td>
+                                    <td>meta-refresh</td>
+                                    <td>WCAG 2 Level A, WCAG 2.2.1</td>
+                                </tr>
+                            </tbody>
+                                <tbody><tr>
+                                    <th scope="row">38</th>
+                                    <td>&lt;object&gt; elements must have alternate text</td>
+                                    <td>object-alt</td>
+                                    <td>WCAG 2 Level A, WCAG 1.1.1</td>
+                                </tr>
+                            </tbody>
+                                <tbody><tr>
+                                    <th scope="row">39</th>
+                                    <td>[role="img"] elements must have an alternative text</td>
+                                    <td>role-img-alt</td>
+                                    <td>WCAG 2 Level A, WCAG 1.1.1</td>
+                                </tr>
+                            </tbody>
+                                <tbody><tr>
+                                    <th scope="row">40</th>
+                                    <td>scope attribute should be used correctly</td>
+                                    <td>scope-attr-valid</td>
+                                    <td>Best practice</td>
+                                </tr>
+                            </tbody>
+                                <tbody><tr>
+                                    <th scope="row">41</th>
+                                    <td>Select element must have an accessible name</td>
+                                    <td>select-name</td>
+                                    <td>WCAG 2 Level A, WCAG 4.1.2</td>
+                                </tr>
+                            </tbody>
+                                <tbody><tr>
+                                    <th scope="row">42</th>
+                                    <td>Server-side image maps must not be used</td>
+                                    <td>server-side-image-map</td>
+                                    <td>WCAG 2 Level A, WCAG 2.1.1</td>
+                                </tr>
+                            </tbody>
+                                <tbody><tr>
+                                    <th scope="row">43</th>
+                                    <td>&lt;svg&gt; elements with an img role must have an alternative text</td>
+                                    <td>svg-img-alt</td>
+                                    <td>WCAG 2 Level A, WCAG 1.1.1</td>
+                                </tr>
+                            </tbody>
+                                <tbody><tr>
+                                    <th scope="row">44</th>
+                                    <td>Elements should not have tabindex greater than zero</td>
+                                    <td>tabindex</td>
+                                    <td>Best practice</td>
+                                </tr>
+                            </tbody>
+                                <tbody><tr>
+                                    <th scope="row">45</th>
+                                    <td>tables should not have the same summary and caption</td>
+                                    <td>table-duplicate-name</td>
+                                    <td>Best practice</td>
+                                </tr>
+                            </tbody>
+                                <tbody><tr>
+                                    <th scope="row">46</th>
+                                    <td>Table cells that use the headers attribute must only refer to cells in the same table</td>
+                                    <td>td-headers-attr</td>
+                                    <td>WCAG 2 Level A, WCAG 1.3.1</td>
+                                </tr>
+                            </tbody>
+                                <tbody><tr>
+                                    <th scope="row">47</th>
+                                    <td>Table headers in a data table must refer to data cells</td>
+                                    <td>th-has-data-cells</td>
+                                    <td>WCAG 2 Level A, WCAG 1.3.1</td>
+                                </tr>
+                            </tbody>
+                                <tbody><tr>
+                                    <th scope="row">48</th>
+                                    <td>lang attribute must have a valid value</td>
+                                    <td>valid-lang</td>
+                                    <td>WCAG 2 Level AA, WCAG 3.1.2</td>
+                                </tr>
+                            </tbody>
+                                <tbody><tr>
+                                    <th scope="row">49</th>
+                                    <td>&lt;video&gt; elements must have captions</td>
+                                    <td>video-caption</td>
+                                    <td>WCAG 2 Level A, WCAG 1.2.2</td>
+                                </tr>
+                            </tbody>
+                                <tbody><tr>
+                                    <th scope="row">50</th>
+                                    <td>&lt;video&gt; or &lt;audio&gt; elements must not play automatically</td>
+                                    <td>no-autoplay-audio</td>
+                                    <td>WCAG 2 Level A, WCAG 1.4.2</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="rulesSection">
+            <div class="card">
+                <div class="card-header" id="ruleSection">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link" data-toggle="collapse" data-target="#rules" aria-expanded="false" aria-controls="inapplicable">
+                            axe was running with 0 rules. Expand details on click
+                        </button>
+                    </h5>
+                </div>
+                <div id="rules" class="collapse" aria-labelledby="ruleSection" data-parent="#rules">
+                    <div class="card-body">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        hljs.initHighlightingOnLoad();
+    </script>
+
+
+</body></html>
